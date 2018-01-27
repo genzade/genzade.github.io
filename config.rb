@@ -8,6 +8,11 @@ end
 
 activate :pry
 
+set :css_dir,    'assets/stylesheets'
+set :js_dir,     'assets/javascripts'
+set :images_dir, 'assets/images'
+set :svgs_dir,   'source/assets/images/svgs'
+
 # Layouts
 # https://middlemanapp.com/basics/layouts/
 
