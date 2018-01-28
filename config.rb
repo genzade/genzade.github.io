@@ -7,6 +7,7 @@ activate :autoprefixer do |prefix|
 end
 
 activate :pry
+activate :livereload
 
 set :css_dir,    'assets/stylesheets'
 set :js_dir,     'assets/javascripts'
