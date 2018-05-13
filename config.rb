@@ -2,12 +2,7 @@ require 'slim'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
-activate :autoprefixer do |prefix|
-  prefix.browsers = "last 2 versions"
-end
-
-activate :pry
-activate :livereload
+# activate :livereload
 
 set :css_dir,    'assets/stylesheets'
 set :js_dir,     'assets/javascripts'
