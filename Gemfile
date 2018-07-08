@@ -20,5 +20,6 @@ gem 'slim'
 
 group :test do
   gem 'capybara', '~> 3.1'
+  gem 'pry-byebug', '~> 3.6'
   gem 'rspec', '~> 3.7'
 end

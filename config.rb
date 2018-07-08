@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require 'slim'
+require 'pry'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
 
