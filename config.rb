@@ -1,8 +1,8 @@
+# frozen_string_literal: true
+
 require 'slim'
 # Activate and configure extensions
 # https://middlemanapp.com/advanced/configuration/#configuring-extensions
-
-# activate :livereload
 
 set :css_dir,    'assets/stylesheets'
 set :js_dir,     'assets/javascripts'
@@ -16,6 +16,10 @@ set :svgs_dir,   'source/assets/images/svgs'
 page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
+
+configure :development do
+  activate :livereload
+end
 
 # With alternative layout
 # page '/path/to/file.html', layout: 'other_layout'
