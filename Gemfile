@@ -17,3 +17,8 @@ gem 'wdm', '~> 0.1', platforms: %i[mswin mingw]
 
 # slim template because f**k brackets
 gem 'slim'
+
+group :test do
+  gem 'capybara', '~> 3.1'
+  gem 'rspec', '~> 3.7'
+end
