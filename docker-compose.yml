@@ -1,0 +1,11 @@
+---
+services:
+  jekyll:
+    platform: linux/amd64/v8
+    image: jekyll/jekyll
+    volumes:
+      - .:/srv/jekyll
+      - ./vendor/bundle/:/usr/local/bundle
+    ports:
+      - "4000:4000"
+    command: jekyll serve --drafts --trace
