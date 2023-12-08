@@ -13,6 +13,10 @@ github_username: genzade
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-postcss
+
+postcss:
+  cache: false
 
 exclude:
 #   - .sass-cache/

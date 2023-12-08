@@ -8,6 +8,7 @@ gem 'webrick', '~> 1.8', '>= 1.8.1'
 
 group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.12'
+  gem 'jekyll-postcss', '~> 0.5.0'
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
