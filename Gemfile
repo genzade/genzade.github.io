@@ -7,6 +7,7 @@ gem 'jekyll', '~> 4.3.2'
 gem 'webrick', '~> 1.8', '>= 1.8.1'
 
 group :jekyll_plugins do
+  gem 'jekyll-compose', '~> 0.12.0'
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-postcss', '~> 0.5.0'
 end

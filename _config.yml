@@ -12,6 +12,7 @@ github_username: genzade
 
 # theme: minima
 plugins:
+  - jekyll-compose
   - jekyll-feed
   - jekyll-postcss
 
