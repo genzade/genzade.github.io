@@ -19,6 +19,9 @@ plugins:
 postcss:
   cache: false
 
+include:
+  - _pages
+
 exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: "Happy Jekylling!"
+permalink: /
 ---
 
 ## You're ready to go!
