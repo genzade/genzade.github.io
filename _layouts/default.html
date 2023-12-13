@@ -7,9 +7,35 @@
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
   </head>
 
-  <body class="text-red-700">
-    {% include navigation.html %}
+  <body class="antialiased bg-gray-200">
+    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
+      <div class="flex-1 flex justify-between items-center">
+        <a href="/">
+          <div class="rounded-full border-8 border-black m-4 h-28 w-28">
+            {% include images/logo.svg %}
+          </div>
+        </a>
+      </div>
 
-    {{ content }}
+      <label for="menu-toggle" class="cursor-pointer lg:hidden block">
+        {% include images/menu-mobile.svg %}
+      </label>
+
+      <input type="checkbox" class="hidden" id="menu-toggle"/>
+
+      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
+        {% include navigation.html %}
+      </div>
+    </header>
+
+    <div class="px-4">
+      <div class="max-w-5xl bg-white rounded-lg mx-auto my-16 p-16">
+        <h1 class="text-3xl font-bold text-center">{{ page.title }}</h1>
+
+        <div class="mt-6">
+          {{ content }}
+        </div>
+      </div>
+    </div>
   </body>
 </html>

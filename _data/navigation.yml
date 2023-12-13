@@ -1,7 +1,10 @@
 ---
 - name: Home
   link: /
-- name: About
-  link: /about.html
+  image: home
 - name: Blog
   link: /blog.html
+  image: blogs
+- name: About
+  link: /about.html
+  image: about

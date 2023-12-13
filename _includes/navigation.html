@@ -1,7 +1,21 @@
 <nav>
-  {% for item in site.data.navigation %}
-    <a href="{{ item.link }}" {% if page.url == item.link %} class="text-black" {% endif %}">
-      {{ item.name }}
-    </a>
-  {% endfor %}
+  <ul
+    class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0"
+  >
+    {% for item in site.data.navigation %}
+    <li>
+      <a href="{{ item.link }}" class="nav-link m-4">
+        <div class="inline-flex p-2">
+          <div class="self-center w-12 h-12">
+            {% include images/{{ item.image }}.svg %}
+          </div>
+
+          <span class="ms-3 self-center text-2xl font-extrabold">
+            {{ item.name }}
+          </span>
+        </div>
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
 </nav>

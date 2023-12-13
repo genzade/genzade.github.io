@@ -1,6 +1,22 @@
 ---
 ---
 
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
+ */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+/* .bg-hero {
+  background-image: url({{ site.hero_image | relative_url }});
+} */
+
+.nav-link {
+  @apply lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400;
+}
