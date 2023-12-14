@@ -7,17 +7,17 @@
 
 @font-face {
   font-family: "jura-bold";
-  src: url("../fonts/google/Jura-Bold.ttf");
+  src: url("./fonts/google/Jura-Bold.ttf");
 }
 
 @font-face {
   font-family: "jura-light";
-  src: url("../fonts/google/Jura-Light.ttf");
+  src: url("./fonts/google/Jura-Light.ttf");
 }
 
 @font-face {
   font-family: "jura-medium";
-  src: url("../fonts/google/Jura-Medium.ttf");
+  src: url("./fonts/google/Jura-Medium.ttf");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
 
 @font-face {
   font-family: "jura-semibold";
-  src: url("../fonts/google/Jura-SemiBold.ttf");
+  src: url("./fonts/google/Jura-SemiBold.ttf");
 }
 
 body {
