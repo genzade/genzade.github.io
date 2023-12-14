@@ -6,6 +6,11 @@
 @import "tailwindcss/utilities";
 
 @font-face {
+  font-family: "jura-bold";
+  src: url("../fonts/google/Jura-Bold.ttf");
+}
+
+@font-face {
   font-family: "jura-light";
   src: url("../fonts/google/Jura-Light.ttf");
 }
@@ -27,6 +32,18 @@
 
 body {
   font-family: "jura-regular";
+}
+
+h1 {
+  font-family: "jura-bold";
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "jura-semibold";
 }
 
 #menu-toggle:checked + #menu {
