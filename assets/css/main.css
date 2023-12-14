@@ -1,13 +1,38 @@
 ---
 ---
 
-/* @tailwind base;
-@tailwind components;
-@tailwind utilities;
- */
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+@font-face {
+  font-family: "jura-bold";
+  src: url("../fonts/google/Jura-Bold.ttf");
+}
+
+@font-face {
+  font-family: "jura-light";
+  src: url("../fonts/google/Jura-Light.ttf");
+}
+
+@font-face {
+  font-family: "jura-medium";
+  src: url("../fonts/google/Jura-Medium.ttf");
+}
+
+@font-face {
+  font-family: "jura-regular";
+  src: url("../fonts/google/Jura-Regular.ttf");
+}
+
+@font-face {
+  font-family: "jura-semibold";
+  src: url("../fonts/google/Jura-SemiBold.ttf");
+}
+
+body {
+  font-family: "jura-regular";
+}
 
 #menu-toggle:checked + #menu {
   display: block;
