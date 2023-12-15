@@ -10,11 +10,24 @@ url: "https://genzade.github.io" # the base hostname & protocol for your site, e
 twitter_username: genzade
 github_username: genzade
 
-# theme: minima
 plugins:
   - jekyll-compose
   - jekyll-feed
   - jekyll-postcss
+# markdown: kramdown
+# # kramdown:
+# #   syntax_highlighter: rouge
+# #   input: GFM
+# kramdown:
+#   input: GFM
+#   syntax_highlighter: rouge
+#   syntax_highlighter_opts:
+#     css_class: 'highlight'
+#   span:
+#     line_numbers: false
+#   block:
+#     line_numbers: true
+#     start_line: 1
 
 postcss:
   cache: false

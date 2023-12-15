@@ -1,6 +1,10 @@
 ---
 ---
 
+/* @import "syntax_highlighting/zenburn.css"; */
+/* @import "syntax_highlighting/monokai.css"; */
+@import "syntax_highlighting/railscast.css";
+
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
@@ -55,5 +59,5 @@ h6 {
 } */
 
 .nav-link {
-  @apply lg:p-4 py-3 px-0 block border-b-2 border-transparent hover:border-indigo-400;
+  @apply block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4;
 }
