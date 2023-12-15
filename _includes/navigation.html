@@ -1,10 +1,12 @@
 <nav>
-  <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
+  <ul
+    class="items-center justify-between pt-4 text-base text-gray-700 lg:flex lg:pt-0"
+  >
     {% for item in site.data.navigation %}
     <li>
       <a href="{{ item.link }}" class="nav-link ml-4">
         <div class="inline-flex p-2">
-          <div class="self-center w-12 h-12">
+          <div class="h-12 w-12 self-center">
             {% include images/{{ item.image }}.svg %}
           </div>
 

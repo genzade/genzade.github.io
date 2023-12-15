@@ -46,11 +46,11 @@ module.exports = {
 	},
 	plugins: [
 		require("@tailwindcss/typography"),
-		require("tailwindcss/plugin")(function ({ addVariant }) {
-			addVariant(
-				"prose-inline-code",
-				'&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *))',
-			);
-		}),
+		// require("tailwindcss/plugin")(function ({ addVariant }) {
+		// 	addVariant(
+		// 		"prose-inline-code",
+		// 		'&.prose :where(:not(pre)>code):not(:where([class~="not-prose"] *))',
+		// 	);
+		// }),
 	],
 };
