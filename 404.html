@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
   </head>
 
-  <body class="antialiased bg-gray-200">
-    <header class="lg:px-16 px-6 bg-white flex flex-wrap items-center lg:py-0 py-2">
-      <div class="flex-1 flex justify-between items-center">
-        <a href="/">
-          <div class="rounded-full border-8 border-black m-4 h-28 w-28">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+  <body class="antialiased bg-slate-700 min-h-screen bg-cover bg-center bg-no-repeat">
+    <header
+  class="lg:p-15 before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-28 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] md:justify-around"
+>
+  <a href="/" class="">
+    <div class="m-0 h-28 w-28 rounded-full border-8 border-black"><svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 width="100%" viewBox="0 0 1200 1200" enable-background="new 0 0 1200 1200" xml:space="preserve" class="rounded-full">
 <path fill="#00F603" opacity="1.000000" stroke="none" 
 	d="
@@ -2434,85 +2434,100 @@ M591.064209,821.091431
 	C586.608459,831.171082 586.586731,825.931213 591.064209,821.091431 
 z"/>
 </svg>
+</div>
+  </a>
 
-          </div>
-        </a>
-      </div>
+  <input type="checkbox" id="check" />
 
-      <label for="menu-toggle" class="cursor-pointer lg:hidden block">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="60" height="60" class="w-6 h-6">
+  <label for="check" class="icons absolute right-0 block cursor-pointer pr-4">
+    <i id="menu-icon" class="visible items-center md:hidden"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="60" height="60" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/>
 </svg>
+ </i>
+    <i id="close-icon" class="md:hidden"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" width="60" height="60" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+</svg>
+ </i>
+  </label>
 
-      </label>
-
-      <input type="checkbox" class="hidden" id="menu-toggle"/>
-
-      <div class="hidden lg:flex lg:items-center lg:w-auto w-full" id="menu">
-        <nav>
-  <ul class="lg:flex items-center justify-between text-base text-gray-700 pt-4 lg:pt-0">
-    
-    <li>
-      <a href="/" class="nav-link ml-4">
-        <div class="inline-flex p-2">
-          <div class="self-center w-12 h-12">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <nav
+  class="navbar bg-[rgba(0, 0, 0, 0.1)] absolute left-0 top-full z-[100] h-0 w-screen overflow-hidden backdrop-blur-[50px] md:relative md:top-0 md:h-auto md:w-max"
+>
+  
+  <a
+    href="/"
+    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    style="--i:0"
+  >
+    <div class="flex items-center justify-center">
+      <div class="inline-flex">
+        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
   <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
 </svg>
-
-          </div>
-
-          <span class="ms-3 self-center text-2xl font-extrabold">
-            Home
-          </span>
-        </div>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/blog.html" class="nav-link ml-4">
-        <div class="inline-flex p-2">
-          <div class="self-center w-12 h-12">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-  <path fill-rule="evenodd" d="M4.125 3C3.089 3 2.25 3.84 2.25 4.875V18a3 3 0 003 3h15a3 3 0 01-3-3V4.875C17.25 3.839 16.41 3 15.375 3H4.125zM12 9.75a.75.75 0 000 1.5h1.5a.75.75 0 000-1.5H12zm-.75-2.25a.75.75 0 01.75-.75h1.5a.75.75 0 010 1.5H12a.75.75 0 01-.75-.75zM6 12.75a.75.75 0 000 1.5h7.5a.75.75 0 000-1.5H6zm-.75 3.75a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5H6a.75.75 0 01-.75-.75zM6 6.75a.75.75 0 00-.75.75v3c0 .414.336.75.75.75h3a.75.75 0 00.75-.75v-3A.75.75 0 009 6.75H6z" clip-rule="evenodd" />
-  <path d="M18.75 6.75h1.875c.621 0 1.125.504 1.125 1.125V18a1.5 1.5 0 01-3 0V6.75z" />
+</div>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> Home </span>
+      </div>
+    </div>
+  </a>
+  
+  <a
+    href="/about.html"
+    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    style="--i:1"
+  >
+    <div class="flex items-center justify-center">
+      <div class="inline-flex">
+        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M17.982 18.725A7.488 7.488 0 0012 15.75a7.488 7.488 0 00-5.982 2.975m11.963 0a9 9 0 10-11.963 0m11.963 0A8.966 8.966 0 0112 21a8.966 8.966 0 01-5.982-2.275M15 9.75a3 3 0 11-6 0 3 3 0 016 0z" />
 </svg>
-
-          </div>
-
-          <span class="ms-3 self-center text-2xl font-extrabold">
-            Blog
-          </span>
-        </div>
-      </a>
-    </li>
-    
-    <li>
-      <a href="/about.html" class="nav-link ml-4">
-        <div class="inline-flex p-2">
-          <div class="self-center w-12 h-12">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6">
-  <path fill-rule="evenodd" d="M18.685 19.097A9.723 9.723 0 0021.75 12c0-5.385-4.365-9.75-9.75-9.75S2.25 6.615 2.25 12a9.723 9.723 0 003.065 7.097A9.716 9.716 0 0012 21.75a9.716 9.716 0 006.685-2.653zm-12.54-1.285A7.486 7.486 0 0112 15a7.486 7.486 0 015.855 2.812A8.224 8.224 0 0112 20.25a8.224 8.224 0 01-5.855-2.438zM15.75 9a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" clip-rule="evenodd" />
+</div>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> About </span>
+      </div>
+    </div>
+  </a>
+  
+  <a
+    href="/blog.html"
+    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    style="--i:2"
+  >
+    <div class="flex items-center justify-center">
+      <div class="inline-flex">
+        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
 </svg>
-
-          </div>
-
-          <span class="ms-3 self-center text-2xl font-extrabold">
-            About
-          </span>
-        </div>
-      </a>
-    </li>
-    
-  </ul>
+</div>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> Blog </span>
+      </div>
+    </div>
+  </a>
+  
+  <a
+    href="https://github.com/genzade/genzade.github.io"
+    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    style="--i:3"
+  >
+    <div class="flex items-center justify-center">
+      <div class="inline-flex">
+        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px]" viewBox="0 0 98 96">
+  <path fill-rule="evenodd" clip-rule="evenodd" d="M48.854 0C21.839 0 0 22 0 49.217c0 21.756 13.993 40.172 33.405 46.69 2.427.49 3.316-1.059 3.316-2.362 0-1.141-.08-5.052-.08-9.127-13.59 2.934-16.42-5.867-16.42-5.867-2.184-5.704-5.42-7.17-5.42-7.17-4.448-3.015.324-3.015.324-3.015 4.934.326 7.523 5.052 7.523 5.052 4.367 7.496 11.404 5.378 14.235 4.074.404-3.178 1.699-5.378 3.074-6.6-10.839-1.141-22.243-5.378-22.243-24.283 0-5.378 1.94-9.778 5.014-13.2-.485-1.222-2.184-6.275.486-13.038 0 0 4.125-1.304 13.426 5.052a46.97 46.97 0 0 1 12.214-1.63c4.125 0 8.33.571 12.213 1.63 9.302-6.356 13.427-5.052 13.427-5.052 2.67 6.763.97 11.816.485 13.038 3.155 3.422 5.015 7.822 5.015 13.2 0 18.905-11.404 23.06-22.324 24.283 1.78 1.548 3.316 4.481 3.316 9.126 0 6.6-.08 11.897-.08 13.526 0 1.304.89 2.853 3.316 2.364 19.412-6.52 33.405-24.935 33.405-46.691C97.707 22 75.788 0 48.854 0z" fill="#fff"/>
+</svg>
+</div>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> Github </span>
+      </div>
+    </div>
+  </a>
+  
 </nav>
 
-      </div>
-    </header>
+</header>
+
 
     <div class="px-4">
-      <div class="max-w-5xl bg-white rounded-lg mx-auto my-16 p-16">
+      <div class="max-w-5xl bg-slate-900 rounded-lg mx-auto my-16 p-16">
+        
         <h1 class="text-3xl font-bold text-center"></h1>
+        
 
         <div class="mt-6">
           <style type="text/css" media="screen">
