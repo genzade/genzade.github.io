@@ -1,21 +1,18 @@
-<nav>
-  <ul
-    class="items-center justify-between pt-4 text-base text-gray-700 lg:flex lg:pt-0"
+<nav
+  class="navbar bg-[rgba(0, 0, 0, 0.1)] absolute left-0 top-full z-[100] h-0 w-screen overflow-hidden backdrop-blur-[50px] md:relative md:top-0 md:h-auto md:w-max"
+>
+  {% for item in site.data.navigation %}
+  <a
+    href="{{ item.link }}"
+    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    style="--i:{{forloop.index0}}"
   >
-    {% for item in site.data.navigation %}
-    <li>
-      <a href="{{ item.link }}" class="nav-link ml-4">
-        <div class="inline-flex p-2">
-          <div class="h-12 w-12 self-center">
-            {% include images/{{ item.image }}.svg %}
-          </div>
-
-          <span class="ms-3 self-center text-2xl font-extrabold">
-            {{ item.name }}
-          </span>
-        </div>
-      </a>
-    </li>
-    {% endfor %}
-  </ul>
+    <div class="flex items-center justify-center">
+      <div class="inline-flex">
+        <div class="h-8 w-8 self-center">{% include images/{{ item.image }}.svg %}</div>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> {{ item.name }} </span>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
 </nav>

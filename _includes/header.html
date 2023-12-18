@@ -1,0 +1,16 @@
+<header
+  class="lg:p-15 before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-28 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] md:justify-around"
+>
+  <a href="/" class="">
+    <div class="m-0 h-28 w-28 rounded-full border-8 border-black">{% include images/logo.svg %}</div>
+  </a>
+
+  <input type="checkbox" id="check" />
+
+  <label for="check" class="icons absolute right-0 block cursor-pointer pr-4">
+    <i id="menu-icon" class="visible items-center md:hidden"> {% include images/menu-mobile.svg %} </i>
+    <i id="close-icon" class="md:hidden"> {% include images/close.svg %} </i>
+  </label>
+
+  {% include navigation.html %}
+</header>

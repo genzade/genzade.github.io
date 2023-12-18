@@ -2,9 +2,12 @@
 - name: Home
   link: /
   image: home
-- name: Blog
-  link: /blog.html
-  image: blogs
 - name: About
   link: /about.html
   image: about
+- name: Blog
+  link: /blog.html
+  image: blogs
+- name: Github
+  link: https://github.com/genzade/genzade.github.io
+  image: github

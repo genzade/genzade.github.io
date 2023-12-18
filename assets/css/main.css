@@ -36,6 +36,10 @@
 
 body {
   font-family: "jura-regular";
+  background: url("../images/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 h1 {
@@ -50,14 +54,55 @@ h6 {
   font-family: "jura-semibold";
 }
 
+.prose th {
+  @apply text-slate-300;
+}
+
 #menu-toggle:checked + #menu {
   display: block;
 }
 
-/* .bg-hero {
-  background-image: url({{ site.hero_image | relative_url }});
-} */
-
 .nav-link {
   @apply block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: inline-flex;
+  }
+
+  #check:checked ~ .icons #menu-icon {
+    display: none;
+  }
+
+  .icons #close-icon {
+    display: none;
+  }
+
+  #check:checked ~ .icons #close-icon {
+    display: block;
+  }
+
+  .navbar {
+    transition: 0.3s ease;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+    /* @apply shadow-lg transition-transform duration-300 ease-in-out; */
+  }
+
+  #check:checked ~ .navbar {
+    @apply h-auto;
+  }
+
+  .navbar a {
+    transform: translateY(-50px);
+  }
+
+  #check:checked ~ .navbar a {
+    transform: translateY(0);
+    transition-delay: calc(0.16s * (var(--i)));
+  }
 }
