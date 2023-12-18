@@ -1,10 +1,19 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2023-12-18T21:23:11+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/12/14/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-12-14T21:07:00+00:00</published><updated>2023-12-14T21:07:00+00:00</updated><id>https://genzade.github.io/2023/12/14/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/12/14/pihole-unbound-docker.html"><![CDATA[<h1 id="pihole-unbound-docker-raspberry-pi">Pihole Unbound Docker (Raspberry Pi)</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2023-12-18T21:37:48+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">test blog here</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="test blog here" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<h1 id="some-title">Some title</h1>
+
+<p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">attribute</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tableName</span><span class="p">;</span>
+</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Some title]]></summary></entry><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-11-13T00:00:00+00:00</published><updated>2023-11-13T00:00:00+00:00</updated><id>https://genzade.github.io/2023/11/13/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html"><![CDATA[<h1 id="pihole-unbound-docker-raspberry-pi">Pihole Unbound Docker (Raspberry Pi)</h1>
+
+<p>In this article you will learn all the steps needed to setup pihole with unbound
+with docker. Even though I set this up with a raspberry pi, you can run this anywhere.
+That’s the beauty of docker containerization.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
-<p>First and foremost you need to <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2">setup your raspberry pi</a>.</p>
+<p>First and foremost you need to <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2" target="\_blank">setup your raspberry pi</a>.</p>
 
-<p>Once that is setup you will need remote access and <a href="https://www.raspberrypi.com/documentation/computers/remote-access.html">here is a detailed guide</a>
+<p>Once that is setup you will need remote access and <a href="https://www.raspberrypi.com/documentation/computers/remote-access.html" target="\_blank">here is a detailed guide</a>
 on how you can achieve this.</p>
 
 <p>Make sure the above steps were done correctly before continuing. Once you have
@@ -23,7 +32,7 @@ compose.</p>
 <span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker <span class="nv">$USER</span>
 </code></pre></div></div>
 
-<p>See <a href="https://raspberrytips.com/docker-on-raspberry-pi/">this article</a> for detailed
+<p>See <a href="https://raspberrytips.com/docker-on-raspberry-pi/" target="\_blank">this article</a> for detailed
 explanation.</p>
 
 <p><code class="language-plaintext highlighter-rouge">docker compose</code></p>
@@ -37,69 +46,8 @@ explanation.</p>
 <h3 id="pi-hole-environment-variables">Pi-hole environment variables</h3>
 
 <blockquote>
-  <p>Vars and descriptions replicated from the <a href="https://github.com/pi-hole/docker-pi-hole/#environment-variables">official pihole container</a>:</p>
+  <p>Vars and descriptions can be viewed in full from the <a href="https://github.com/pi-hole/docker-pi-hole/#environment-variables" target="\_blank">official pihole container</a>:</p>
 </blockquote>
-
-<table>
-  <thead>
-    <tr>
-      <th>Variable</th>
-      <th>Default</th>
-      <th>Value</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">TZ</code></td>
-      <td>UTC</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;Timezone&gt;</code></td>
-      <td>Set your <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">timezone</a> to make sure logs rotate at local midnight instead of at UTC midnight.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">WEBPASSWORD</code></td>
-      <td>random</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;Admin password&gt;</code></td>
-      <td>http://pi.hole/admin password. Run <code class="language-plaintext highlighter-rouge">docker logs pihole \| grep random</code> to find your random pass.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">FTLCONF_LOCAL_IPV4</code></td>
-      <td>unset</td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;Host's IP&gt;</code></td>
-      <td>Set to your server’s LAN IP, used by web block modes and lighttpd bind address.</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">REV_SERVER</code></td>
-      <td><code class="language-plaintext highlighter-rouge">false</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;"true"\|"false"&gt;</code></td>
-      <td>Enable DNS conditional forwarding for device name resolution</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">REV_SERVER_DOMAIN</code></td>
-      <td>unset</td>
-      <td>Network Domain</td>
-      <td>If conditional forwarding is enabled, set the domain of the local network router</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">REV_SERVER_TARGET</code></td>
-      <td>unset</td>
-      <td>Router’s IP</td>
-      <td>If conditional forwarding is enabled, set the IP of the local network router</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">REV_SERVER_CIDR</code></td>
-      <td>unset</td>
-      <td>Reverse DNS</td>
-      <td>If conditional forwarding is enabled, set the reverse DNS zone (e.g. <code class="language-plaintext highlighter-rouge">192.168.0.0/24</code>)</td>
-    </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">WEBTHEME</code></td>
-      <td><code class="language-plaintext highlighter-rouge">default-light</code></td>
-      <td><code class="language-plaintext highlighter-rouge">&lt;"default-dark"\|"default-darker"\|"default-light"\|"default-auto"\|"lcars"&gt;</code></td>
-      <td>User interface theme to use.</td>
-    </tr>
-  </tbody>
-</table>
 
 <p>Example <code class="language-plaintext highlighter-rouge">.env</code> file in the same directory as your <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code> file:</p>
 
@@ -143,7 +91,7 @@ explanation.</p>
 <span class="nv">$ </span>dig dnssec.works @127.0.0.1 <span class="nt">-p</span> 5335        <span class="c"># this should work and return an IP address</span>
 </code></pre></div></div>
 
-<p>Read <a href="https://docs.pi-hole.net/guides/dns/unbound/">this article</a> for a detailed
+<p>Read <a href="https://docs.pi-hole.net/guides/dns/unbound/" target="\_blank">this article</a> for a detailed
 explanation of what is going on here.</p>
 
 <p>If all is well update your router log into your router’s configuration page and
@@ -152,9 +100,4 @@ raspberry pi’s IP address. Note: make sure you adjust this setting under your
 LAN settings and not the WAN.</p>
 
 <p>Log into the admin dashboard of you pihole in a browser and you should start
-seeing queries being blocked.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Pihole Unbound Docker (Raspberry Pi)]]></summary></entry><entry><title type="html">test blog here</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="test blog here" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<h1 id="some-title">Some title</h1>
-
-<p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
-
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">attribute</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tableName</span><span class="p">;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Some title]]></summary></entry></feed>
+seeing queries being blocked.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Pihole Unbound Docker (Raspberry Pi)]]></summary></entry></feed>
