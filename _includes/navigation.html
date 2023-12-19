@@ -6,6 +6,9 @@
     href="{{ item.link }}"
     class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
     style="--i:{{forloop.index0}}"
+    {% if item.name == 'Github' %}
+      target="_blank"
+    {% endif %}
   >
     <div class="flex items-center justify-center">
       <div class="inline-flex">
