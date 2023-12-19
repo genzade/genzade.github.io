@@ -10,6 +10,7 @@ group :jekyll_plugins do
   gem 'jekyll-compose', '~> 0.12.0'
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-postcss', '~> 0.5.0'
+  gem 'jekyll-toc', '~> 0.18.0'
 end
 
 platforms :mingw, :x64_mingw, :mswin, :jruby do
