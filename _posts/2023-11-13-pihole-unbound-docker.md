@@ -2,8 +2,10 @@
 layout: post
 title: Pihole Unbound Docker
 date: 2023-11-13 00:00 +0000
+toc: true
 ---
-# Pihole Unbound Docker (Raspberry Pi)
+
+# Introduction
 
 In this article you will learn all the steps needed to setup pihole with unbound
 with docker. Even though I set this up with a raspberry pi, you can run this anywhere.
@@ -46,7 +48,7 @@ $ sudo apt-get install docker-compose-plugin
 
 First create a `.env` file to substitute variables for your deployment.
 
-### Pi-hole environment variables
+# Pi-hole environment variables
 
 > Vars and descriptions can be viewed in full from the [official pihole container](https://github.com/pi-hole/docker-pi-hole/#environment-variables){:target="\_blank"}:
 
@@ -74,7 +76,7 @@ $ cp .env.sample .env
 
 Change the values as nesessary.
 
-## Run it
+# Run it
 
 You run it with the following command.
 
@@ -82,7 +84,7 @@ You run it with the following command.
 $ docker compose up -d
 ```
 
-## Test it
+# Test it
 
 From inside your raspberry pi start a bash session in the docker container.
 
@@ -107,3 +109,7 @@ LAN settings and not the WAN.
 
 Log into the admin dashboard of you pihole in a browser and you should start
 seeing queries being blocked.
+
+# Github repo
+
+You can check out all the source code for this setup [here](https://github.com/genzade/pihole_unbound){:target="\_blank"}.

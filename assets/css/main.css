@@ -36,10 +36,12 @@
 
 body {
   font-family: "jura-regular";
+  @apply bg-slate-100 text-slate-100;
 }
 
 h1 {
   font-family: "jura-bold";
+  @apply text-slate-100;
 }
 
 h2,
@@ -97,4 +99,30 @@ h6 {
     transform: translateY(0);
     transition-delay: calc(0.16s * (var(--i)));
   }
+}
+
+.toc ul {
+  @apply m-0 list-none p-0;
+}
+
+.toc ul ul {
+  @apply pl-4;
+}
+
+.toc li a {
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  @apply block text-slate-200 no-underline;
+}
+
+.toc li.visible > a {
+  transform: translate(5px);
+  @apply text-green-300;
+}
+
+.toc-marker {
+  @apply absolute left-0 top-0 z-[-1] h-full w-full;
+}
+
+.toc-marker path {
+  transition: all 0.3s ease;
 }

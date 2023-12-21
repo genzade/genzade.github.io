@@ -2,12 +2,26 @@
 layout: default
 ---
 
-<article class="mx-auto max-w-5xl">
-  <div class="prose prose-slate mx-auto mt-16 md:prose-lg lg:prose-xl">
+<article class="prose my-6 max-w-none break-words px-2 md:prose-lg lg:prose-xl md:pt-24">
+  <div class="mx-auto mt-16">
     <div class="flex justify-between">
-      <p class="text-sm">{{ page.date | date_to_string }}</p>
       <p class="text-sm">{% include reading-time.html %}</p>
+      <p class="text-sm">{{ page.date | date_to_string }}</p>
     </div>
-    {{ content }}
+
+    <div class="md:grid md:grid-cols-9 md:gap-2">
+      <section class="sm:col-span-7">{{ content | inject_anchors }}</section>
+
+      <div class="col-span-2 hidden h-full md:mt-0 md:inline">
+        <aside class="sticky top-20 pl-0 pt-0">
+          <nav class="toc sticky left-12 top-0 w-auto p-4 leading-loose">
+            <header class="font-bold">Table of Contents</header>
+            <div class="text-sm">{% toc %}</div>
+            {% include images/toc-marker.svg %}
+          </nav>
+        </aside>
+      </div>
+      <div class="grid justify-items-end gap-2"></div>
+    </div>
   </div>
 </article>
