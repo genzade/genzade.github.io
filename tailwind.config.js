@@ -12,7 +12,7 @@ module.exports = {
 			typography: (theme) => ({
 				DEFAULT: {
 					css: {
-						color: theme("colors.gray.200"),
+						color: theme("colors.slate.200"),
 						a: {
 							color: theme("colors.green.300"),
 							"&:hover": {
@@ -23,18 +23,18 @@ module.exports = {
 							},
 						},
 						"a:not([href])": {
-							color: theme("colors.gray.200"),
+							color: theme("colors.slate.200"),
 							textDecoration: "none",
 						},
 						blockquote: {
-							color: theme("colors.gray.200"),
+							color: theme("colors.slate.200"),
 							fontWeight: "600",
 							fontStyle: "italic",
-							borderLeftColor: theme("colors.gray.400"),
+							borderLeftColor: theme("colors.slate.400"),
 						},
 						code: {
 							color: "rgb(255, 180, 84)",
-							backgroundColor: theme("colors.gray.800"),
+							backgroundColor: theme("colors.slate.800"),
 							fontWeight: "400",
 							padding: "1px 3px",
 							borderRadius: "3px",
@@ -49,19 +49,19 @@ module.exports = {
 							color: theme("colors.green.400"),
 						},
 						h1: {
-							color: theme("colors.gray.100"),
+							color: theme("colors.slate.100"),
 						},
 						h2: {
-							color: theme("colors.gray.100"),
+							color: theme("colors.slate.100"),
 						},
 						h3: {
-							color: theme("colors.gray.100"),
+							color: theme("colors.slate.100"),
 						},
 						h4: {
-							color: theme("colors.gray.100"),
+							color: theme("colors.slate.100"),
 						},
 						strong: {
-							color: theme("colors.gray.50"),
+							color: theme("colors.slate.50"),
 						},
 					},
 				},

@@ -6,11 +6,12 @@
     <title>Pihole Unbound Docker - Genzade</title>
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
+    <script src="https://genzade.github.io/assets/js/main.js" defer></script>
   </head>
 
   <body class="antialiased bg-slate-700 min-h-screen">
     <header
-  class="lg:p-15 before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-24 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] md:justify-around"
+  class="lg:p-15 before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-24 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] md:justify-evenly"
 >
   <a href="/" class="">
     <div class="m-0 h-24 w-24"><?xml version="1.0" standalone="no"?>
@@ -123,27 +124,31 @@
 
 
     <div class="px-4 my-28">
-      <div class="max-w-5xl bg-slate-900 rounded-lg mx-auto my-16 p-16">
-        
+      <div class="max-w-5xl bg-slate-900 rounded-lg mx-auto my-16 p-6">
+        <h1 class="text-5xl font-extrabold text-center pt-10">Pihole Unbound Docker</h1>
 
         <div class="mt-6">
-          <article class="mx-auto max-w-5xl">
-  <div class="prose prose-slate mx-auto mt-16 md:prose-lg lg:prose-xl">
+          <article class="prose my-6 max-w-none break-words px-2 md:prose-lg lg:prose-xl md:pt-24">
+  <div class="mx-auto mt-16">
     <div class="flex justify-between">
-      <p class="text-sm">13 Nov 2023</p>
       <p class="text-sm">
 
 3 minutes to read
 
 </p>
+      <p class="text-sm">13 Nov 2023</p>
     </div>
-    <h1 id="pihole-unbound-docker-raspberry-pi">Pihole Unbound Docker (Raspberry Pi)</h1>
+
+    <div class="md:grid md:grid-cols-9 md:gap-2">
+      <section class="sm:col-span-7"><h1 id="introduction">
+<a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
 
 <p>In this article you will learn all the steps needed to setup pihole with unbound
 with docker. Even though I set this up with a raspberry pi, you can run this anywhere.
 That’s the beauty of docker containerization.</p>
 
-<h2 id="prerequisites">Prerequisites</h2>
+<h2 id="prerequisites">
+<a class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
 
 <p>First and foremost you need to <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2" target="\_blank">setup your raspberry pi</a>.</p>
 
@@ -177,7 +182,8 @@ explanation.</p>
 
 <p>First create a <code class="language-plaintext highlighter-rouge">.env</code> file to substitute variables for your deployment.</p>
 
-<h3 id="pi-hole-environment-variables">Pi-hole environment variables</h3>
+<h1 id="pi-hole-environment-variables">
+<a class="anchor" href="#pi-hole-environment-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pi-hole environment variables</h1>
 
 <blockquote>
   <p>Vars and descriptions can be viewed in full from the <a href="https://github.com/pi-hole/docker-pi-hole/#environment-variables" target="\_blank">official pihole container</a>:</p>
@@ -205,14 +211,16 @@ explanation.</p>
 
 <p>Change the values as nesessary.</p>
 
-<h2 id="run-it">Run it</h2>
+<h1 id="run-it">
+<a class="anchor" href="#run-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run it</h1>
 
 <p>You run it with the following command.</p>
 
 <div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker compose up <span class="nt">-d</span>
 </code></pre></div></div>
 
-<h2 id="test-it">Test it</h2>
+<h1 id="test-it">
+<a class="anchor" href="#test-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Test it</h1>
 
 <p>From inside your raspberry pi start a bash session in the docker container.</p>
 
@@ -236,6 +244,36 @@ LAN settings and not the WAN.</p>
 <p>Log into the admin dashboard of you pihole in a browser and you should start
 seeing queries being blocked.</p>
 
+<h1 id="github-repo">
+<a class="anchor" href="#github-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github repo</h1>
+
+<p>You can check out all the source code for this setup <a href="https://github.com/genzade/pihole_unbound" target="\_blank">here</a>.</p>
+</section>
+
+      <div class="col-span-2 hidden h-full md:mt-0 md:inline">
+        <aside class="sticky top-20 pl-0 pt-0">
+          <nav class="toc sticky left-12 top-0 w-auto p-4 leading-loose">
+            <header class="font-bold">Table of Contents</header>
+            <div class="text-sm"><ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#introduction">Introduction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#pi-hole-environment-variables">Pi-hole environment variables</a></li>
+<li class="toc-entry toc-h1"><a href="#run-it">Run it</a></li>
+<li class="toc-entry toc-h1"><a href="#test-it">Test it</a></li>
+<li class="toc-entry toc-h1"><a href="#github-repo">Github repo</a></li>
+</ul></div>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#00F603" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+          </nav>
+        </aside>
+      </div>
+      <div class="grid justify-items-end gap-2"></div>
+    </div>
   </div>
 </article>
 
