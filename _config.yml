@@ -14,6 +14,7 @@ plugins:
   - jekyll-compose
   - jekyll-feed
   - jekyll-postcss
+  - jekyll-seo-tag
   - jekyll-toc
 # markdown: kramdown
 # # kramdown:
