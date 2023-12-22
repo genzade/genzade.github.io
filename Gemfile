@@ -11,6 +11,7 @@ group :jekyll_plugins do
   gem 'jekyll-feed', '~> 0.12'
   gem 'jekyll-postcss', '~> 0.5.0'
   gem 'jekyll-seo-tag', '~> 2.8'
+  gem 'jekyll-tagging', '~> 1.1'
   gem 'jekyll-toc', '~> 0.18.0'
 end
 
