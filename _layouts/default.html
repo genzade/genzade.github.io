@@ -6,7 +6,9 @@
     <title>{{ page.title }} - {{ site.title }}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
     <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.svg" />
-    <script src="{{ "/assets/js/main.js" | absolute_url }}" defer></script>
+    {% if page.layout == "post" %}
+    <script src="{{ "/assets/js/blog/toc-marker.js" | absolute_url }}" defer></script>
+    {% endif %}
     {% seo %}
   </head>
 

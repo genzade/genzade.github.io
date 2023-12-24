@@ -1,5 +1,4 @@
 window.onload = function () {
-	console.log("Hello World from main.js!");
 	const toc = document.querySelector(".toc");
 	const tocPath = document.querySelector(".toc-marker path");
 	let tocItems;
