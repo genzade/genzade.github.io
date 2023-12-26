@@ -56,10 +56,6 @@ h6 {
   @apply text-slate-300;
 }
 
-.nav-link {
-  @apply block border-b-2 border-transparent px-0 py-3 hover:border-indigo-400 lg:p-4;
-}
-
 #check {
   display: none;
 }
