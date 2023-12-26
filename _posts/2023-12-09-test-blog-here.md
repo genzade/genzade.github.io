@@ -2,7 +2,10 @@
 layout: post
 title: test blog here
 date: 2023-12-09 22:10 +0000
+tags: misc
 ---
+
+Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.
 
 # Some title
 
