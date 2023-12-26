@@ -4,7 +4,7 @@
   {% for item in site.data.navigation %}
   <a
     href="{{ item.link }}"
-    class="my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
+    class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
     style="--i:{{forloop.index0}}"
     {% if item.name == 'Github' %}
       target="_blank"
@@ -13,7 +13,7 @@
     <div class="flex items-center justify-center">
       <div class="inline-flex">
         <div class="h-8 w-8 self-center">{% include images/{{ item.image }}.svg %}</div>
-        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold md:text-2xl"> {{ item.name }} </span>
+        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold"> {{ item.name }} </span>
       </div>
     </div>
   </a>
