@@ -1,13 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2023-12-24T17:43:20+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">test blog here</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="test blog here" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<h1 id="some-title">Some title</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2023-12-26T23:37:57+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">test blog here</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="test blog here" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+
+<h1 id="some-title">Some title</h1>
 
 <p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
 
 <div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">attribute</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tableName</span><span class="p">;</span>
-</code></pre></div></div>]]></content><author><name></name></author><summary type="html"><![CDATA[Some title]]></summary></entry><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-11-13T00:00:00+00:00</published><updated>2023-11-13T00:00:00+00:00</updated><id>https://genzade.github.io/2023/11/13/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html"><![CDATA[<h1 id="introduction">Introduction</h1>
+</code></pre></div></div>]]></content><author><name></name></author><category term="misc" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.]]></summary></entry><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-11-13T00:00:00+00:00</published><updated>2023-11-13T00:00:00+00:00</updated><id>https://genzade.github.io/2023/11/13/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html"><![CDATA[<p>In an era where online privacy and digital security have become paramount, taking
+control of your network’s DNS infrastructure is a fundamental step towards fortifying
+your defenses. In this guide, we’ll delve into the robust combination of Pi-hole
+and Unbound, leveraging the power of Docker containers to enhance your network’s
+privacy, security, and overall performance.</p>
 
-<p>In this article you will learn all the steps needed to setup pihole with unbound
-with docker. Even though I set this up with a raspberry pi, you can run this anywhere.
-That’s the beauty of docker containerization.</p>
+<h1 id="introduction">Introduction</h1>
+
+<p>Pi-hole is an open-source network-wide ad blocker, it not only sweeps away intrusive
+advertisements but also serves as a potent tool for filtering out malicious content
+and tracking. On the other hand, Unbound, a validating, recursive, and caching DNS
+resolver, ensures that your DNS queries are resolved securely and free from eavesdropping
+or manipulation.</p>
+
+<p>Why Docker containers? Docker provides a lightweight and portable solution for deploying
+applications and services, ensuring consistent performance across different environments.
+By encapsulating Pi-hole and Unbound in Docker containers, we achieve an isolated
+and easily replicable setup, simplifying the installation process and minimizing
+potential conflicts.</p>
+
+<p>Even though in the following guide I set this up with a raspberry pi, you can run
+this anywhere you like. That’s the beauty of docker containerization.</p>
 
 <h2 id="prerequisites">Prerequisites</h2>
 
@@ -104,4 +123,4 @@ seeing queries being blocked.</p>
 
 <h1 id="github-repo">Github repo</h1>
 
-<p>You can check out all the source code for this setup <a href="https://github.com/genzade/pihole_unbound" target="\_blank">here</a>.</p>]]></content><author><name></name></author><category term="docker" /><category term="raspberrypi" /><category term="misc" /><summary type="html"><![CDATA[Introduction]]></summary></entry></feed>
+<p>You can check out all the source code for this setup <a href="https://github.com/genzade/pihole_unbound" target="\_blank">here</a>.</p>]]></content><author><name></name></author><category term="docker" /><category term="raspberrypi" /><category term="misc" /><summary type="html"><![CDATA[In an era where online privacy and digital security have become paramount, taking control of your network’s DNS infrastructure is a fundamental step towards fortifying your defenses. In this guide, we’ll delve into the robust combination of Pi-hole and Unbound, leveraging the power of Docker containers to enhance your network’s privacy, security, and overall performance.]]></summary></entry></feed>
