@@ -6,11 +6,28 @@ toc: true
 tags: docker raspberrypi misc
 ---
 
+In an era where online privacy and digital security have become paramount, taking
+control of your network's DNS infrastructure is a fundamental step towards fortifying
+your defenses. In this guide, we'll delve into the robust combination of Pi-hole
+and Unbound, leveraging the power of Docker containers to enhance your network's
+privacy, security, and overall performance.
+
 # Introduction
 
-In this article you will learn all the steps needed to setup pihole with unbound
-with docker. Even though I set this up with a raspberry pi, you can run this anywhere.
-That's the beauty of docker containerization.
+Pi-hole is an open-source network-wide ad blocker, it not only sweeps away intrusive
+advertisements but also serves as a potent tool for filtering out malicious content
+and tracking. On the other hand, Unbound, a validating, recursive, and caching DNS
+resolver, ensures that your DNS queries are resolved securely and free from eavesdropping
+or manipulation.
+
+Why Docker containers? Docker provides a lightweight and portable solution for deploying
+applications and services, ensuring consistent performance across different environments.
+By encapsulating Pi-hole and Unbound in Docker containers, we achieve an isolated
+and easily replicable setup, simplifying the installation process and minimizing
+potential conflicts.
+
+Even though in the following guide I set this up with a raspberry pi, you can run
+this anywhere you like. That's the beauty of docker containerization.
 
 ## Prerequisites
 
