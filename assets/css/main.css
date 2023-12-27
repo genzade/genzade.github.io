@@ -123,23 +123,23 @@ h6 {
   transition: all 0.3s ease;
 }
 
-.blogs-container {
+.articles-container {
   @apply grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3;
 }
 
-.blog-card {
+.article-card {
   @apply m-4 inline-block overflow-hidden rounded-lg bg-slate-800 p-4 shadow-lg hover:bg-slate-700;
 }
 
-.blog-card h2 {
+.article-card h2 {
   @apply mb-2 text-2xl font-bold uppercase tracking-tight;
 }
 
-.blog-card span {
+.article-card span {
   @apply text-sm font-semibold text-slate-100;
 }
 
-.blog-card p {
+.article-card p {
   @apply mb-3 font-normal text-slate-200;
 }
 
