@@ -4,30 +4,4 @@ title: Blog
 permalink: /blog.html
 ---
 
-<div class="blogs-container">
-  {% for post in site.posts %}
-  <div class="blog-card">
-    {% if post.tags %}
-    <div class="tag-container">
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tag/{{ tag }}">
-        <button>{{ tag }}</button>
-      </a>
-      {% endfor %}
-    </div>
-    {% endif %}
-
-    <a href="{{ post.url }}">
-      <h2>{{ post.title }}</h2>
-    </a>
-
-    <small>{{ post.excerpt | truncatewords:30 }}</small>
-
-    <p>{{ post.date | date: "%B %-d, %Y" }}</p>
-
-    <a href="{{ post.url }}" class="read-more">
-      <span>Read More</span>
-    </a>
-  </div>
-  {% endfor %}
-</div>
+{% include blogs-container.html posts=site.posts %}
