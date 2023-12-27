@@ -5,9 +5,9 @@
 - name: About
   link: /about
   image: about
-- name: Blog
-  link: /blog.html
-  image: blogs
+- name: Articles
+  link: /articles
+  image: article
 - name: Tags
   link: /tags.html
   image: tag
