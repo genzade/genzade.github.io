@@ -3,7 +3,7 @@
   link: /
   image: home
 - name: About
-  link: /about.html
+  link: /about
   image: about
 - name: Blog
   link: /blog.html

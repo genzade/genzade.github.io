@@ -1,7 +1,9 @@
 ---
 layout: default
 title: "About Me"
-permalink: /about.html
+permalink: /about
 ---
 
 ## about page
+
+from about index
