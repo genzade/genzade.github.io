@@ -9,7 +9,7 @@
   link: /articles
   image: article
 - name: Tags
-  link: /tags.html
+  link: /tags
   image: tag
 - name: Github
   link: https://github.com/genzade/genzade.github.io
