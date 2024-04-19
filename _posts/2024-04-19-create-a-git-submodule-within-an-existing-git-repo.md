@@ -14,7 +14,7 @@ git submodules.
 The scenario here is the following:
 
 You have a project with multiple repositories within it. When you began this project,
-it was small and manageable. You check it in to [version control](https://en.wikipedia.org/wiki/Version_control)
+it was small and manageable. You check it in to [version control](https://en.wikipedia.org/wiki/Version_control){:target="\_blank"}
 as you continue to work on it. Over time, you will find that the project is growing
 in size and scope. If you are at this stage and think it would be a good idea to
 separate out the subdirectories in your project into their own sub-projects, that
@@ -25,8 +25,8 @@ the guide for you.
 
 This article assumes you have the following prerequisites:
 
-1. Have [`git`](https://git-scm.com/) installed on your machine.
-1. Have a Github account, follow [this guide](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github) if you do not have one already. (note I am only using Github as it is my preferred choice, you can substitute is for your own Git hosting platform of choice)
+1. Have [`git`](https://git-scm.com/){:target="\_blank"} installed on your machine.
+1. Have a Github account, follow [this guide](https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github){:target="\_blank"} if you do not have one already. (note I am only using Github as it is my preferred choice, you can substitute is for your own Git hosting platform of choice)
 
 # TL;DR
 
@@ -126,7 +126,7 @@ $ git submodule update --recursive --remote
 Note that the above command will pull in the latest changes from all git submodules
 that exist in your project.
 
-Now you can check the [git diff](https://git-scm.com/docs/git-diff) with the
+Now you can check the [git diff](https://git-scm.com/docs/git-diff){:target="\_blank"} with the
 `--submodule` flag in your project and you will see that the submodule `HEAD`
 commit has changed and points to the latests commit of that submodule.
 
@@ -153,17 +153,17 @@ $ git config push.recurseSubmodules check
 # Wrapping up
 
 This was a good approach for me personally as I implemented this directly into my
-[dotfiles repo](https://github.com/genzade/dotfiles) where I wanted to work on some
+[dotfiles repo](https://github.com/genzade/dotfiles){:target="\_blank"} where I wanted to work on some
 of those configurations separately from the main folder and check them into version
-control. Have a look at my [dotfiles repo](https://github.com/genzade/dotfiles) (parent)
-and my [nvim config](https://github.com/genzade/nvim) (child) setup.
+control. Have a look at my [dotfiles repo](https://github.com/genzade/dotfiles){:target="\_blank"} (parent)
+and my [nvim config](https://github.com/genzade/nvim){:target="\_blank"} (child) setup.
 
 ### sources
 
-*https://git-scm.com/search/results?search=submodule*
+_[submodule docs](https://git-scm.com/search/results?search=submodule){:target="\_blank"}_
 
-*https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi*
+_[stack overflow post](https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi){:target="\_blank"}_
 
-*https://www.youtube.com/watch?v=wTGIDDg0tK8*
+_[a very nicely done youtube video](https://www.youtube.com/watch?v=wTGIDDg0tK8){:target="\_blank"}_
 
-*https://phoenixnap.com/kb/git-pull-submodule*
+_[a very nicely written article](https://phoenixnap.com/kb/git-pull-submodule){:target="\_blank"}_
