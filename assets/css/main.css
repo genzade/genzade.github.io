@@ -52,8 +52,16 @@ h6 {
   font-family: "jura-semibold";
 }
 
+a {
+  @apply no-underline;
+}
+
 .prose th {
   @apply text-slate-300;
+}
+
+.prose a {
+  @apply no-underline;
 }
 
 #check {
