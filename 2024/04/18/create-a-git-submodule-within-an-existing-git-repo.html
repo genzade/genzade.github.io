@@ -3,25 +3,28 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Genzade </title>
+    <title>Genzade  - create a git submodule within an existing git repo </title>
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
     
+    <script src="https://genzade.github.io/assets/js/article/toc-marker.js" defer></script>
+    
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Genzade | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<title>create a git submodule within an existing git repo | Genzade</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Genzade" />
+<meta property="og:title" content="create a git submodule within an existing git repo" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="https://genzade.github.io/tags" />
-<meta property="og:url" content="https://genzade.github.io/tags" />
+<meta name="description" content="This guide will breakdown the steps needed when working with git repositories and git submodules." />
+<meta property="og:description" content="This guide will breakdown the steps needed when working with git repositories and git submodules." />
+<link rel="canonical" href="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" />
+<meta property="og:url" content="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" />
 <meta property="og:site_name" content="Genzade" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-04-18T17:27:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Genzade" />
+<meta property="twitter:title" content="create a git submodule within an existing git repo" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Genzade","url":"https://genzade.github.io/tags"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-18T17:27:00+00:00","datePublished":"2024-04-18T17:27:00+00:00","description":"This guide will breakdown the steps needed when working with git repositories and git submodules.","headline":"create a git submodule within an existing git repo","mainEntityOfPage":{"@type":"WebPage","@id":"https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"},"url":"https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -161,39 +164,221 @@
     <div class="px-4 my-28">
       <div class="max-w-5xl bg-slate-900 rounded-lg mx-auto my-16 p-6">
         
+        <h1 class="text-5xl font-extrabold text-center pt-10 uppercase">create a git submodule within an existing git repo</h1>
+        
 
         <div class="mt-6">
-          <div class="tag-container mx-auto flex items-center justify-center px-10">
-   
-  <a href="/tag/docker">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
-      
-      <h1 class="text-black">docker (1)</h1>
-    </button>
-  </a>
-   
-  <a href="/tag/raspberrypi">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
-      
-      <h1 class="text-black">raspberrypi (1)</h1>
-    </button>
-  </a>
-   
-  <a href="/tag/misc">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
-      
-      <h1 class="text-black">misc (3)</h1>
-    </button>
-  </a>
-   
-  <a href="/tag/git">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
-      
-      <h1 class="text-black">git (1)</h1>
-    </button>
-  </a>
-  
-</div>
+          <article class="prose my-6 max-w-none break-words px-2 md:prose-lg lg:prose-xl md:pt-24">
+  <div class="mx-auto mt-16">
+    <div class="flex justify-between">
+      <p class="text-sm">
+
+5 minutes to read
+
+</p>
+      <p class="text-sm">18 Apr 2024</p>
+    </div>
+
+    <div class="md:grid md:grid-cols-9 md:gap-2">
+      <section class="sm:col-span-7"><p>This guide will breakdown the steps needed when working with git repositories and
+git submodules.</p>
+
+<h1 id="introduction">
+<a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>The scenario here is the following:</p>
+
+<p>You have a project with multiple repositories within it. When you began this project,
+it was small and manageable. You check it in to <a href="https://en.wikipedia.org/wiki/Version_control">version control</a>
+as you continue to work on it. Over time, you will find that the project is growing
+in size and scope. If you are at this stage and think it would be a good idea to
+separate out the subdirectories in your project into their own sub-projects, that
+is, check them in to version control and develop them independently, then this is
+the guide for you.</p>
+
+<h2 id="prerequisites">
+<a class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>This article assumes you have the following prerequisites:</p>
+
+<ol>
+  <li>Have <a href="https://git-scm.com/"><code class="language-plaintext highlighter-rouge">git</code></a> installed on your machine.</li>
+  <li>Have a Github account, follow <a href="https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github">this guide</a> if you do not have one already. (note I am only using Github as it is my preferred choice, you can substitute is for your own Git hosting platform of choice)</li>
+</ol>
+
+<h1 id="tldr">
+<a class="anchor" href="#tldr" aria-hidden="true"><span class="octicon octicon-link"></span></a>TL;DR</h1>
+
+<p>Assuming you have a repo in your home directory called <code class="language-plaintext highlighter-rouge">~/parent_repo</code>, within
+which you have another repository called <code class="language-plaintext highlighter-rouge">child</code>, and the tree looks something
+like this:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>tree ~/parent_repo
+parent_repo
+├── child                       <span class="c"># this will become a submodule</span>
+│   └── something
+│       ├── something-else.file
+│       └── foo
+│           ├── bar.file
+│           └── baz.file
+├── ipsum.html
+├── lorem.xml
+├── package.json
+└── another-child
+    ├── docker.html
+    ├── misc.html
+    └── raspberrypi.html
+</code></pre></div></div>
+
+<p>Copy the repo you want to submodulise (not sure if that is a word but you know what
+I mean. I hope)</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> <span class="nt">-R</span> ~/parent_repo/child  <span class="c"># done in `home`, you can choose anywhere you want to store it</span>
+</code></pre></div></div>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~/child
+<span class="nv">$ </span>~/child
+<span class="nv">$ </span>git init
+<span class="nv">$ </span>git add <span class="nb">.</span>
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s1">'initial commit'</span>
+</code></pre></div></div>
+
+<p>Go to GitHub and create a repository, and call it whatever you want. I would call
+it <code class="language-plaintext highlighter-rouge">child</code> since the local repo is also called that, and consistency is a good thing.
+Once you have done this, run the following from within the <code class="language-plaintext highlighter-rouge">~/child</code> repo:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>git remote add origin git@github.com:&lt;USERNAME&gt;/child.git
+git branch <span class="nt">-M</span> main
+git push <span class="nt">-u</span> origin main
+</code></pre></div></div>
+
+<p>If all is done correctly, you should have a remote repo called ‘child’ at <code class="language-plaintext highlighter-rouge">https://github.com/&lt;USERNAME&gt;/child</code>.</p>
+
+<p>Now back to the terminal.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cd</span> ~/parent_repo
+<span class="nv">$ </span>git <span class="nb">rm</span> <span class="nt">-r</span> <span class="nt">--cached</span> child
+<span class="nv">$ </span><span class="nb">rm</span> <span class="nt">-rf</span> child
+<span class="nv">$ </span>git submodule add git@github.com:&lt;USERNAME&gt;/child.git child
+<span class="nv">$ </span>git commit <span class="nt">-m</span> <span class="s1">'added submodule'</span>
+<span class="nv">$ </span>git push origin main
+</code></pre></div></div>
+
+<h1 id="a-few-things-to-note-with-this-approach">
+<a class="anchor" href="#a-few-things-to-note-with-this-approach" aria-hidden="true"><span class="octicon octicon-link"></span></a>A few things to note with this approach</h1>
+
+<h2 id="when-cloning-a-repo-with-git-submodules">
+<a class="anchor" href="#when-cloning-a-repo-with-git-submodules" aria-hidden="true"><span class="octicon octicon-link"></span></a>When cloning a repo with git submodules</h2>
+
+<p>When cloning a repo with git submodules, you will find that it is not enough just
+to clone the repo (<code class="language-plaintext highlighter-rouge">$ git clone &lt;URL&gt;</code>) as the submodule repo’s will just be empty
+and you have to update the submodules first in order to get the latest versions
+of them.</p>
+
+<p>This is should be done with the following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone &lt;URL_of_project_with_submodule&gt;
+<span class="nv">$ </span><span class="nb">cd </span>to/path/of/project/with/submodule
+<span class="nv">$ </span>git submodule update <span class="nt">--init</span> <span class="nt">--recursive</span>
+</code></pre></div></div>
+
+<p>This could also be achieved with one line as well:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git clone <span class="nt">--recursive-submodules</span> &lt;URL_of_project_with_submodule&gt;
+</code></pre></div></div>
+
+<h2 id="when-pulling-in-latest-changes-from-submodule-remote">
+<a class="anchor" href="#when-pulling-in-latest-changes-from-submodule-remote" aria-hidden="true"><span class="octicon octicon-link"></span></a>When pulling in latest changes from submodule remote</h2>
+
+<p>Changes have been made in the submodule project, committed, and pushed to Github.
+You wish to pull in those changes to your parent repo. This can be done with the
+following command:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git submodule update <span class="nt">--recursive</span> <span class="nt">--remote</span>
+</code></pre></div></div>
+
+<p>Note that the above command will pull in the latest changes from all git submodules
+that exist in your project.</p>
+
+<p>Now you can check the <a href="https://git-scm.com/docs/git-diff">git diff</a> with the
+<code class="language-plaintext highlighter-rouge">--submodule</code> flag in your project and you will see that the submodule <code class="language-plaintext highlighter-rouge">HEAD</code>
+commit has changed and points to the latests commit of that submodule.</p>
+
+<p>Side note: you can set this to be the default behaviour in your git config with
+the following command;</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config <span class="nt">--global</span> diff.submodule log
+</code></pre></div></div>
+
+<p>Similarly, you can set <code class="language-plaintext highlighter-rouge">$ git config status.submodulesummary 1</code> so that running
+<code class="language-plaintext highlighter-rouge">$ git status</code> will show you a summary of the git status of your submodules.</p>
+
+<h2 id="when-working-on-the-submodule">
+<a class="anchor" href="#when-working-on-the-submodule" aria-hidden="true"><span class="octicon octicon-link"></span></a>When working on the submodule</h2>
+
+<p>It is important to make sure all submodule changes have been pushed properly and
+luckily check this with <code class="language-plaintext highlighter-rouge">$ git push --recurse-submodules=check</code> and this behaviour
+can be made the default with;</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>git config push.recurseSubmodules check
+</code></pre></div></div>
+
+<h1 id="wrapping-up">
+<a class="anchor" href="#wrapping-up" aria-hidden="true"><span class="octicon octicon-link"></span></a>Wrapping up</h1>
+
+<p>This was a good approach for me personally as I implemented this directly into my
+<a href="https://github.com/genzade/dotfiles">dotfiles repo</a> where I wanted to work on some
+of those configurations separately from the main folder and check them into version
+control. Have a look at my <a href="https://github.com/genzade/dotfiles">dotfiles repo</a> (parent)
+and my <a href="https://github.com/genzade/nvim">nvim config</a> (child) setup.</p>
+
+<h3 id="sources">
+<a class="anchor" href="#sources" aria-hidden="true"><span class="octicon octicon-link"></span></a>sources</h3>
+
+<p><em>https://git-scm.com/search/results?search=submodule</em></p>
+
+<p><em>https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi</em></p>
+
+<p><em>https://www.youtube.com/watch?v=wTGIDDg0tK8</em></p>
+
+<p><em>https://phoenixnap.com/kb/git-pull-submodule</em></p>
+</section>
+
+      <div class="col-span-2 hidden h-full md:mt-0 md:inline">
+        <aside class="sticky top-20 pl-0 pt-0">
+          <nav class="toc sticky left-12 top-0 w-auto p-4 leading-loose">
+            <header class="font-bold">Table of Contents</header>
+            <div class="text-sm"><ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#introduction">Introduction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#tldr">TL;DR</a></li>
+<li class="toc-entry toc-h1"><a href="#a-few-things-to-note-with-this-approach">A few things to note with this approach</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#when-cloning-a-repo-with-git-submodules">When cloning a repo with git submodules</a></li>
+<li class="toc-entry toc-h2"><a href="#when-pulling-in-latest-changes-from-submodule-remote">When pulling in latest changes from submodule remote</a></li>
+<li class="toc-entry toc-h2"><a href="#when-working-on-the-submodule">When working on the submodule</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#wrapping-up">Wrapping up</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#sources">sources</a></li>
+</ul>
+</li>
+</ul></div>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#00F603" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+          </nav>
+        </aside>
+      </div>
+      <div class="grid justify-items-end gap-2"></div>
+    </div>
+  </div>
+</article>
 
         </div>
       </div>
