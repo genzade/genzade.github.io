@@ -3,7 +3,7 @@ layout: post
 title: create a git submodule within an existing git repo
 date: 2024-04-18 19:27 +0200
 toc: true
-tags: git misc
+tags: git
 ---
 
 This guide will breakdown the steps needed when working with git repositories and
@@ -160,10 +160,7 @@ and my [nvim config](https://github.com/genzade/nvim){:target="\_blank"} (child)
 
 ### sources
 
-_[submodule docs](https://git-scm.com/search/results?search=submodule){:target="\_blank"}_
-
-_[stack overflow post](https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi){:target="\_blank"}_
-
-_[a very nicely done youtube video](https://www.youtube.com/watch?v=wTGIDDg0tK8){:target="\_blank"}_
-
-_[a very nicely written article](https://phoenixnap.com/kb/git-pull-submodule){:target="\_blank"}_
+- _[submodule docs](https://git-scm.com/search/results?search=submodule){:target="\_blank"}_
+- _[stack overflow post](https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi){:target="\_blank"}_
+- _[a very nicely done youtube video](https://www.youtube.com/watch?v=wTGIDDg0tK8){:target="\_blank"}_
+- _[a very nicely written article](https://phoenixnap.com/kb/git-pull-submodule){:target="\_blank"}_
