@@ -1,16 +1,22 @@
 <header
-  class="before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-24 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] md:justify-around lg:p-6"
+  class="before:bg-[rgba(0, 0, 0, 0.1)] fixed left-0 top-0 z-[100] flex h-24 w-full items-center p-5 text-white before:absolute before:left-0 before:top-0 before:z-[-1] before:h-full before:w-full before:backdrop-blur-[50px] sm:justify-evenly lg:p-6"
 >
-  <a href="/" class="">
-    <div class="m-0 h-24 w-24">{% include images/logo-with-circle.svg %}</div>
-  </a>
+  <div class="container mx-auto flex max-w-5xl items-center justify-between px-0">
+    <div class="flex">
+      <a href="/">
+        <div class="m-0 h-24 w-24">{% include images/logo-with-circle.svg %}</div>
+      </a>
+    </div>
 
-  <input type="checkbox" id="check" />
+    <div class="flex items-center">
+      <input type="checkbox" id="check" />
 
-  <label for="check" class="icons absolute right-0 block cursor-pointer pr-4">
-    <i id="menu-icon" class="visible md:hidden"> {% include images/menu-mobile.svg %} </i>
-    <i id="close-icon" class="md:hidden"> {% include images/close.svg %} </i>
-  </label>
+      <label for="check" class="icons absolute right-0 block cursor-pointer pr-4">
+        <i id="menu-icon" class="visible md:hidden"> {% include images/menu-mobile.svg %} </i>
+        <i id="close-icon" class="md:hidden"> {% include images/close.svg %} </i>
+      </label>
 
-  {% include navigation.html %}
+      {% include navigation.html %}
+    </div>
+  </div>
 </header>
