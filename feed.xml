@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2024-04-21T18:54:03+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">create a git submodule within an existing git repo</title><link href="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" rel="alternate" type="text/html" title="create a git submodule within an existing git repo" /><published>2024-04-18T17:27:00+00:00</published><updated>2024-04-18T17:27:00+00:00</updated><id>https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo</id><content type="html" xml:base="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"><![CDATA[<p>This guide will breakdown the steps needed when working with git repositories and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2024-04-21T19:17:38+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">create a git submodule within an existing git repo</title><link href="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" rel="alternate" type="text/html" title="create a git submodule within an existing git repo" /><published>2024-04-18T17:27:00+00:00</published><updated>2024-04-18T17:27:00+00:00</updated><id>https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo</id><content type="html" xml:base="https://genzade.github.io/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"><![CDATA[<p>This guide will breakdown the steps needed when working with git repositories and
 git submodules.</p>
 
 <h1 id="introduction">Introduction</h1>
@@ -149,14 +149,1630 @@ and my <a href="https://github.com/genzade/nvim" target="\_blank">nvim config</a
   <li><em><a href="https://stackoverflow.com/questions/28306781/how-to-convert-a-git-repo-to-a-submodule-which-is-nested-in-another-parent-gi" target="\_blank">stack overflow post</a></em></li>
   <li><em><a href="https://www.youtube.com/watch?v=wTGIDDg0tK8" target="\_blank">a very nicely done youtube video</a></em></li>
   <li><em><a href="https://phoenixnap.com/kb/git-pull-submodule" target="\_blank">a very nicely written article</a></em></li>
-</ul>]]></content><author><name></name></author><category term="git" /><summary type="html"><![CDATA[This guide will breakdown the steps needed when working with git repositories and git submodules.]]></summary></entry><entry><title type="html">test blog here</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="test blog here" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<p>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</p>
+</ul>]]></content><author><name></name></author><category term="git" /><summary type="html"><![CDATA[This guide will breakdown the steps needed when working with git repositories and git submodules.]]></summary></entry><entry><title type="html">postgres cheatsheet + notes</title><link href="https://genzade.github.io/2023/12/09/test-blog-here.html" rel="alternate" type="text/html" title="postgres cheatsheet + notes" /><published>2023-12-09T22:10:00+00:00</published><updated>2023-12-09T22:10:00+00:00</updated><id>https://genzade.github.io/2023/12/09/test-blog-here</id><content type="html" xml:base="https://genzade.github.io/2023/12/09/test-blog-here.html"><![CDATA[<p>My notes from <a href="https://www.freecodecamp.org/" target="\_blank">freecodecamp.org</a>’s
+sql course as well as my own pg cheetsheat. The accompanying code for these notes
+can be found in my <a href="https://github.com/genzade/postGRES" target="\_blank">github repo</a></p>
 
-<h1 id="some-title">Some title</h1>
+<h2 id="prerequisites">Prerequisites</h2>
 
-<p>Lorem ipsum dolor sit amet, officia excepteur ex fugiat reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit ex esse exercitation amet. Nisi anim cupidatat excepteur officia. Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet voluptate voluptate dolor minim nulla est proident. Nostrud officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex occaecat reprehenderit commodo officia dolor Lorem duis laboris cupidatat officia voluptate. Culpa proident adipisicing id nulla nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua reprehenderit commodo ex non excepteur duis sunt velit enim. Voluptate laboris sint cupidatat ullamco ut ea consectetur et est culpa et culpa duis.</p>
+<ul>
+  <li><a href="https://www.docker.com/" target="\_blank"><code class="language-plaintext highlighter-rouge">docker</code></a></li>
+  <li><a href="https://docs.docker.com/engine/reference/commandline/compose/" target="\_blank"><code class="language-plaintext highlighter-rouge">docker-compose</code></a></li>
+  <li><a href="https://www.pgcli.com/" target="\_blank"><code class="language-plaintext highlighter-rouge">pgcli</code></a> (optional, use <code class="language-plaintext highlighter-rouge">psql</code> or a GUI app of your choice)</li>
+</ul>
 
-<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">attribute</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">tableName</span><span class="p">;</span>
-</code></pre></div></div>]]></content><author><name></name></author><category term="misc" /><summary type="html"><![CDATA[Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.]]></summary></entry><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-11-13T00:00:00+00:00</published><updated>2023-11-13T00:00:00+00:00</updated><id>https://genzade.github.io/2023/11/13/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html"><![CDATA[<p>In an era where online privacy and digital security have become paramount, taking
+<h2 id="setup">Setup</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker-compose up <span class="nt">-d</span> db
+<span class="o">[</span>+] Running 2/2
+ ✔ Network postgres_default  Created                     0.0s
+ ✔ Container postgres-db-1   Started                     0.2s
+</code></pre></div></div>
+
+<h2 id="run">Run</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pgcli postgresql://postgres:1234@localhost:5432/postgres
+Server: PostgreSQL 15.2 <span class="o">(</span>Debian 15.2-1.pgdg110+1<span class="o">)</span>
+Version: 4.0.1
+Home: http://pgcli.com
+postgres@localhost:postgres&gt;
+</code></pre></div></div>
+
+<h3 id="note-regarding-pgcli-command">Note regarding PGCLI command</h3>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pgcli postgresql://postgres:PASSWORD@localhost:PORT/POSTGRES_USER
+<span class="c"># or you can use</span>
+<span class="nv">$ </span>pgcli <span class="nt">-h</span> localhost <span class="nt">-p</span> PORT <span class="nt">-U</span> POSTGRES_USER
+
+</code></pre></div></div>
+
+<h2 id="creating-a-database">Creating a database</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">test</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Check it was created by running <code class="language-plaintext highlighter-rouge">\list</code></p>
+
+<h2 id="connect-to-database">Connect to database</h2>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>pgcli <span class="nt">-h</span> localhost <span class="nt">-p</span> PORT <span class="nt">-U</span> POSTGRES_USER TABLE_NAME
+</code></pre></div></div>
+
+<p>or run <code class="language-plaintext highlighter-rouge">\c TABLE_NAME</code></p>
+
+<h2 id="dropping-a-database">Dropping a database</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">DATABASE</span> <span class="n">test</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>This is very dangerous</em></p>
+
+<h2 id="create-table">Create table</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="k">table_name</span> <span class="p">(</span>
+    <span class="k">column_name</span> <span class="n">data_type</span> <span class="k">constraints</span><span class="p">(</span><span class="n">if</span> <span class="k">any</span><span class="p">)</span>
+<span class="p">)</span>
+
+</code></pre></div></div>
+
+<p>Use <code class="language-plaintext highlighter-rouge">\d</code> (describe) to view a databases tables. Or <code class="language-plaintext highlighter-rouge">\d table_name</code> to see table.</p>
+
+<p>See all <a href="https://www.postgresql.org/docs/current/datatype.html" target="\_blank">data types</a>.</p>
+
+<h3 id="without-constraints">without constraints</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">id</span> <span class="nb">INT</span><span class="p">,</span>
+  <span class="n">first_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+  <span class="n">last_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span>
+  <span class="n">gender</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">7</span><span class="p">),</span>
+  <span class="n">date_of_birth</span> <span class="nb">DATE</span>
+<span class="p">);</span>
+
+</code></pre></div></div>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------------+-----------------------+-----------+
+| Column        | Type                  | Modifiers |
+|---------------+-----------------------+-----------|
+| <span class="nb">id</span>            | integer               |           |
+| first_name    | character varying<span class="o">(</span>50<span class="o">)</span> |           |
+| last_name     | character varying<span class="o">(</span>50<span class="o">)</span> |           |
+| gender        | character varying<span class="o">(</span>7<span class="o">)</span>  |           |
+| date_of_birth | <span class="nb">date</span>                  |           |
++---------------+-----------------------+-----------+
+</code></pre></div></div>
+
+<h3 id="with-constraints">with constraints</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">id</span> <span class="n">BIGSERIAL</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+  <span class="n">first_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">last_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">gender</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+  <span class="n">date_of_birth</span> <span class="nb">DATE</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="p">);</span>
+
+</code></pre></div></div>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+---------------+------------------------+------------------------------------------------------+
+| Column        | Type                   | Modifiers                                            |
+|---------------+------------------------+------------------------------------------------------|
+| <span class="nb">id</span>            | bigint                 |  not null default nextval<span class="o">(</span><span class="s1">'person_id_seq'</span>::regclass<span class="o">)</span> |
+| first_name    | character varying<span class="o">(</span>50<span class="o">)</span>  |  not null                                            |
+| last_name     | character varying<span class="o">(</span>50<span class="o">)</span>  |  not null                                            |
+| gender        | character varying<span class="o">(</span>7<span class="o">)</span>   |  not null                                            |
+| date_of_birth | <span class="nb">date</span>                   |  not null                                            |
+| email         | character varying<span class="o">(</span>150<span class="o">)</span> |                                                      |
++---------------+------------------------+------------------------------------------------------+
+</code></pre></div></div>
+
+<h2 id="drop-table">Drop table</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">TABLE</span> <span class="k">table_name</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><em>This is very dangerous</em></p>
+
+<h2 id="insert-into">Insert into</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">first_name</span><span class="p">,</span>
+  <span class="n">last_name</span><span class="p">,</span>
+  <span class="n">gender</span><span class="p">,</span>
+  <span class="n">date_of_birth</span>
+  <span class="c1">-- email -- not needed as it is nullable</span>
+<span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span> <span class="s1">'Anne'</span><span class="p">,</span> <span class="s1">'Smith'</span><span class="p">,</span> <span class="s1">'FEMALE'</span><span class="p">,</span> <span class="s1">'1988-01-09'</span> <span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">first_name</span><span class="p">,</span>
+  <span class="n">last_name</span><span class="p">,</span>
+  <span class="n">gender</span><span class="p">,</span>
+  <span class="n">date_of_birth</span><span class="p">,</span>
+  <span class="n">email</span>
+<span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span> <span class="s1">'Cornelius'</span><span class="p">,</span> <span class="s1">'Agrippa'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'1990-01-10'</span><span class="p">,</span> <span class="s1">'cagrippa@mail.com'</span> <span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">first_name</span><span class="p">,</span>
+  <span class="n">last_name</span><span class="p">,</span>
+  <span class="n">gender</span><span class="p">,</span>
+  <span class="n">date_of_birth</span><span class="p">,</span>
+  <span class="n">email</span>
+<span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span> <span class="s1">'Elizabeth'</span><span class="p">,</span> <span class="s1">'Lavenza'</span><span class="p">,</span> <span class="s1">'FEMALE'</span><span class="p">,</span> <span class="s1">'1985-08-10'</span><span class="p">,</span> <span class="s1">'lizzy_lav@mail.com'</span> <span class="p">);</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span> <span class="n">person</span> <span class="p">(</span>
+  <span class="n">first_name</span><span class="p">,</span>
+  <span class="n">last_name</span><span class="p">,</span>
+  <span class="n">gender</span><span class="p">,</span>
+  <span class="n">date_of_birth</span><span class="p">,</span>
+  <span class="n">email</span>
+<span class="p">)</span> <span class="k">VALUES</span> <span class="p">(</span> <span class="s1">'Henry'</span><span class="p">,</span> <span class="s1">'Clerval'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'1989-03-21'</span><span class="p">,</span> <span class="s1">'hank_da_doc@mail.com'</span> <span class="p">);</span>
+
+</code></pre></div></div>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>+----+------------+-----------+--------+---------------+----------------------+
+| <span class="nb">id</span> | first_name | last_name | gender | date_of_birth | email                |
+|----+------------+-----------+--------+---------------+----------------------|
+| 1  | Anne       | Smith     | FEMALE | 1988-01-09    | &lt;null&gt;               |
+| 2  | Cornelius  | Agrippa   | MALE   | 1990-01-10    | cagrippa@mail.com    |
+| 3  | Elizabeth  | Lavenza   | FEMALE | 1985-08-10    | lizzy_lav@mail.com   |
+| 4  | Henry      | Clerval   | MALE   | 1989-03-21    | hank_da_doc@mail.com |
++----+------------+-----------+--------+---------------+----------------------+
+</code></pre></div></div>
+
+<h3 id="generate-mock-data-from-file">Generate mock data from file</h3>
+
+<p>Using <a href="https://www.mockaroo.com/">mockaroo</a> you can generate some data to play with.
+View the downloaded file <a href="https://github.com/genzade/postGRES/blob/main/sql/person.sql" target="\_blank">here</a></p>
+
+<p>Use this command to execute that file content.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="n">i</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="k">to</span><span class="o">/</span><span class="n">file</span><span class="p">.</span><span class="k">sql</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="selecting-from-table">Selecting from table</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">table</span><span class="p">;</span>                                 <span class="c1">-- select everything</span>
+<span class="k">SELECT</span> <span class="n">col_a</span><span class="p">,</span> <span class="n">col_b</span> <span class="k">FROM</span> <span class="k">table_name</span><span class="p">;</span>                 <span class="c1">-- select particular columns</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">table</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">col_a</span> <span class="k">ASC</span><span class="p">;</span>              <span class="c1">-- order by column (ascending)</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">table</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">col_a</span> <span class="k">DESC</span><span class="p">;</span>             <span class="c1">-- order by column (descending)</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="k">table</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">col_a</span><span class="p">,</span> <span class="n">col_b</span> <span class="k">DESC</span><span class="p">;</span>      <span class="c1">-- order by multiple column (descending)</span>
+<span class="k">SELECT</span> <span class="k">DISTINCT</span> <span class="n">col_a</span> <span class="k">FROM</span> <span class="k">table</span> <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">col_a</span> <span class="k">ASC</span><span class="p">;</span> <span class="c1">-- select distinct values</span>
+</code></pre></div></div>
+
+<h3 id="using-cluases">Using cluases</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="k">table</span>
+    <span class="k">WHERE</span> <span class="n">col_a</span> <span class="o">=</span> <span class="s1">'some_value'</span><span class="p">;</span> <span class="c1">-- select everything matching criteria</span>
+
+<span class="c1">-- multiple criteria with `AND`</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="k">table</span>
+    <span class="k">WHERE</span> <span class="n">col_a</span> <span class="o">=</span> <span class="s1">'some_value'</span>  <span class="c1">-- select everything matching criteria</span>
+    <span class="k">AND</span> <span class="n">col_b</span> <span class="o">=</span> <span class="s1">'other_value'</span><span class="p">;</span>  <span class="c1">-- and other column value</span>
+
+<span class="c1">-- multiple criteria with `OR`</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="k">table</span>
+    <span class="k">WHERE</span> <span class="n">col_a</span> <span class="o">=</span> <span class="s1">'some_value'</span>  <span class="c1">-- select everything matching criteria</span>
+    <span class="k">AND</span> <span class="p">(</span>
+        <span class="n">col_b</span> <span class="o">=</span> <span class="s1">'other_value'</span>
+        <span class="k">OR</span>
+        <span class="n">col_b</span> <span class="o">=</span> <span class="s1">'another_value'</span> <span class="c1">-- or this column value</span>
+    <span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="comparison-operators">Comparison operators</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | False    |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&lt;</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&gt;=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | False    |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&gt;=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&lt;&gt;</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">-- not equal operator</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | False    |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">1</span> <span class="o">&lt;&gt;</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | True     |</span>
+<span class="c1">-- +----------+</span>
+</code></pre></div></div>
+
+<h3 id="limit-offset-and-fetch">Limit, offset and fetch</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- LIMIT</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email            | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+------------------+------------------|</span>
+<span class="c1">-- | 1  | Eadmund    | Dorsey    | MALE   | 2022-12-12    | &lt;null&gt;           | China            |</span>
+<span class="c1">-- | 2  | Benjamen   | Garnson   | MALE   | 2023-03-18    | bgn1@deviart.com | Slovenia         |</span>
+<span class="c1">-- | 3  | Sven       | Philipsen | MALE   | 2023-11-18    | spn2@jiahis.com  | Norway           |</span>
+<span class="c1">-- | 4  | Mordy      | Albasini  | MALE   | 2023-09-25    | mi3@bc.co.uk     | Belarus          |</span>
+<span class="c1">-- | 5  | Arley      | Naish     | MALE   | 2023-10-13    | ash4@recross.org | Portugal         |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+
+<span class="c1">-- OFFSET</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">OFFSET</span> <span class="mi">5</span> <span class="k">LIMIT</span> <span class="mi">5</span><span class="p">;</span>
+
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email            | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+------------------+------------------|</span>
+<span class="c1">-- | 6  | Kim        | Enriques  | FEMALE | 2023-06-17    | keues5@tmall.com | Australia        |</span>
+<span class="c1">-- | 7  | Amaleta    | Jamot     | FEMALE | 2023-09-02    | ajot6@huains.com | Jamaica          |</span>
+<span class="c1">-- | 8  | Geoffrey   | Heasly    | MALE   | 2023-11-14    | ghesly7@est.com  | Guatemala        |</span>
+<span class="c1">-- | 9  | Stavros    | Mapston   | MALE   | 2023-03-10    | saon8@st.tx.us   | Egypt            |</span>
+<span class="c1">-- | 10 | Hebert     | Duckwith  | MALE   | 2023-02-27    | hith9@pla.or.jp  | Indonesia        |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+
+<span class="c1">-- FETCH</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">OFFSET</span> <span class="mi">5</span> <span class="k">FETCH</span> <span class="k">FIRST</span> <span class="mi">5</span> <span class="k">ROWS</span> <span class="k">ONLY</span><span class="p">;</span>
+
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email            | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+------------------+------------------|</span>
+<span class="c1">-- | 6  | Kim        | Enriques  | FEMALE | 2023-06-17    | keues5@tmall.com | Australia        |</span>
+<span class="c1">-- | 7  | Amaleta    | Jamot     | FEMALE | 2023-09-02    | ajot6@huains.com | Jamaica          |</span>
+<span class="c1">-- | 8  | Geoffrey   | Heasly    | MALE   | 2023-11-14    | ghesly7@est.com  | Guatemala        |</span>
+<span class="c1">-- | 9  | Stavros    | Mapston   | MALE   | 2023-03-10    | saon8@st.tx.us   | Egypt            |</span>
+<span class="c1">-- | 10 | Hebert     | Duckwith  | MALE   | 2023-02-27    | hith9@pla.or.jp  | Indonesia        |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+------------------+------------------+</span>
+</code></pre></div></div>
+
+<h3 id="in">In</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="k">table_name</span>
+    <span class="k">WHERE</span> <span class="k">column</span> <span class="k">IN</span> <span class="p">(</span><span class="s1">'value_1'</span><span class="p">,</span> <span class="s1">'value_2'</span><span class="p">,</span> <span class="s1">'value_3'</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h3 id="between">Between</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="k">table_name</span>
+    <span class="k">WHERE</span> <span class="n">date_column</span>
+    <span class="k">BETWEEN</span> <span class="s1">'2000-01-01'</span> <span class="k">AND</span> <span class="s1">'2020-01-01'</span>
+</code></pre></div></div>
+
+<h3 id="like-and-ilike">Like and iLike</h3>
+
+<h4 id="wildcard-">wildcard ‘%’</h4>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- LIKE</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">person</span>
+    <span class="k">WHERE</span> <span class="n">email</span> <span class="k">LIKE</span> <span class="s1">'%.org'</span><span class="p">;</span> <span class="c1">-- anything that ends with '.org'</span>
+<span class="c1">-- +-----+------------+------------+--------+---------------+----------------+------------------+</span>
+<span class="c1">-- | id  | first_name | last_name  | gender | date_of_birth | email          | country_of_birth |</span>
+<span class="c1">-- |-----+------------+------------+--------+---------------+----------------+------------------|</span>
+<span class="c1">-- | 5   | Arley      | Naish      | MALE   | 2023-10-13    | anh4@rdss.org  | Portugal         |</span>
+<span class="c1">-- | 79  | Abigael    | Blakesley  | FEMALE | 2023-04-17    | aby26@npr.org  | China            |</span>
+<span class="c1">-- | 98  | Brock      | Axby       | MALE   | 2022-11-25    | yp@arhve.org   | Australia        |</span>
+<span class="c1">-- | 111 | Daveta     | Bachelar   | FEMALE | 2023-07-17    | hela@pb.org    | Albania          |</span>
+<span class="c1">-- | 120 | Malinde    | Stacey     | FEMALE | 2023-02-17    | syj@p.org      | Greece           |</span>
+<span class="c1">-- | 123 | Lynn       | Brolechan  | FEMALE | 2023-08-29    | le@macin.org   | Japan            |</span>
+<span class="c1">-- | 151 | Beryle     | Darbishire | FEMALE | 2023-05-26    | ire1e@pal.org  | China            |</span>
+<span class="c1">-- +-----+------------+------------+--------+---------------+----------------+------------------+</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">email</span> <span class="k">LIKE</span> <span class="s1">'%google%'</span><span class="p">;</span> <span class="c1">-- use wildcard anywhere</span>
+<span class="c1">-- +-----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+<span class="c1">-- | id  | first_name | last_name | gender | date_of_birth | email           | country_of_birth |</span>
+<span class="c1">-- |-----+------------+-----------+--------+---------------+-----------------+------------------|</span>
+<span class="c1">-- | 99  | Cynthy     | Kruger    | FEMALE | 2022-12-27    | ck2q@google.com | China            |</span>
+<span class="c1">-- | 163 | Bendite    | Fowell    | FEMALE | 2023-08-18    | bf1q@google.com | China            |</span>
+<span class="c1">-- | 191 | Vaughan    | Heasman   | MALE   | 2023-08-29    | vhn2i@google.ca | China            |</span>
+<span class="c1">-- +-----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+</code></pre></div></div>
+
+<h4 id="wildcard-_">wildcard ‘_’</h4>
+
+<p>The _ character looks for a presence of (any) one single character.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">person</span>
+    <span class="k">WHERE</span> <span class="n">email</span> <span class="k">LIKE</span> <span class="s1">'_______.org'</span><span class="p">;</span> <span class="c1">-- will return rows where email has 7 chars before '.org'</span>
+</code></pre></div></div>
+
+<h4 id="ilike-case-insensitive">iLike (case insensitive)</h4>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- ILIKE</span>
+<span class="k">SELECT</span> <span class="o">*</span>
+    <span class="k">FROM</span> <span class="n">person</span>
+    <span class="k">WHERE</span> <span class="n">country_of_birth</span> <span class="k">ILIKE</span> <span class="s1">'i%'</span><span class="p">;</span> <span class="c1">-- will return rows where country_of_birth begins with i</span>
+</code></pre></div></div>
+
+<h3 id="group-by">Group by</h3>
+
+<p>Lets say you wanted to find out how many people you have in from each country in the database…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">country_of_birth</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">person</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">country_of_birth</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">country_of_birth</span><span class="p">;</span>
+
+<span class="c1">-- +-----------------------+-------+</span>
+<span class="c1">-- | country_of_birth      | count |</span>
+<span class="c1">-- |-----------------------+-------|</span>
+<span class="c1">-- | Afghanistan           | 2     |</span>
+<span class="c1">-- | Albania               | 2     |</span>
+<span class="c1">-- | Argentina             | 2     |</span>
+<span class="c1">-- | Armenia               | 1     |</span>
+<span class="c1">-- | Australia             | 1     |</span>
+<span class="c1">-- | Azerbaijan            | 1     |</span>
+<span class="c1">-- ...</span>
+</code></pre></div></div>
+
+<h4 id="having">Having</h4>
+
+<p>Perform extra filtering after aggregation. e.g. find all countries that have at least 5 people…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">country_of_birth</span><span class="p">,</span> <span class="k">count</span><span class="p">(</span><span class="o">*</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">person</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">country_of_birth</span>
+    <span class="k">HAVING</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">5</span>
+    <span class="k">ORDER</span> <span class="k">BY</span> <span class="n">country_of_birth</span><span class="p">;</span>
+
+<span class="c1">-- +------------------+-------+</span>
+<span class="c1">-- | country_of_birth | count |</span>
+<span class="c1">-- |------------------+-------|</span>
+<span class="c1">-- | China            | 41    |</span>
+<span class="c1">-- | France           | 6     |</span>
+<span class="c1">-- | Indonesia        | 23    |</span>
+<span class="c1">-- | Portugal         | 12    |</span>
+<span class="c1">-- +------------------+-------+</span>
+</code></pre></div></div>
+
+<h2 id="adding-new-table">Adding new table</h2>
+
+<p>See the <a href="https://github.com/genzade/postGRES/blob/main/sql/car.sql" target="\_blank">car sql file</a>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="n">i</span> <span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="k">to</span><span class="o">/</span><span class="n">file</span><span class="p">.</span><span class="k">sql</span><span class="p">;</span>
+
+<span class="c1">-- CREATE TABLE car (</span>
+<span class="c1">--   id BIGSERIAL NOT NULL PRIMARY KEY,</span>
+<span class="c1">--   make VARCHAR(100) NOT NULL,</span>
+<span class="c1">--   model VARCHAR(100) NOT NULL,</span>
+<span class="c1">--   price NUMERIC(19, 2) NOT NULL</span>
+<span class="c1">-- );</span>
+</code></pre></div></div>
+
+<h2 id="calculations">Calculations</h2>
+
+<h3 id="max">Max</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">MAX</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | max      |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 99049.99 |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="c1">-- select maximum price for each car make</span>
+<span class="k">SELECT</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="k">MAX</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">car</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="min">Min</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">MIN</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | min      |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 10470.60 |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="c1">-- select minimum price for each car make</span>
+<span class="k">SELECT</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="k">MIN</span><span class="p">(</span><span class="n">price</span><span class="p">)</span>
+    <span class="k">FROM</span> <span class="n">car</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="avg">Avg</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="k">AVG</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +--------------------+</span>
+<span class="c1">-- | avg                |</span>
+<span class="c1">-- |--------------------|</span>
+<span class="c1">-- | 57763.456700000000 |</span>
+<span class="c1">-- +--------------------+</span>
+
+<span class="c1">-- round the result</span>
+<span class="k">SELECT</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">price</span><span class="p">))</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +-------+</span>
+<span class="c1">-- | round |</span>
+<span class="c1">-- |-------|</span>
+<span class="c1">-- | 57763 |</span>
+<span class="c1">-- +-------+</span>
+
+<span class="c1">-- select minimum price for each car make</span>
+<span class="k">SELECT</span> <span class="n">make</span><span class="p">,</span> <span class="n">ROUND</span><span class="p">(</span><span class="k">AVG</span><span class="p">(</span><span class="n">price</span><span class="p">))</span>
+    <span class="k">FROM</span> <span class="n">car</span>
+    <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">make</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="sum">Sum</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- sum total price for all cars</span>
+<span class="k">SELECT</span> <span class="k">SUM</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +------------+</span>
+<span class="c1">-- | sum        |</span>
+<span class="c1">-- |------------|</span>
+<span class="c1">-- | 5776345.67 |</span>
+<span class="c1">-- +------------+</span>
+
+<span class="c1">-- sum total by car make</span>
+<span class="k">SELECT</span> <span class="n">make</span><span class="p">,</span> <span class="k">SUM</span><span class="p">(</span><span class="n">price</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">car</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">make</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="arithmetic-operators">Arithmetic operators</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="mi">1</span> <span class="o">+</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 3        |</span>
+<span class="c1">-- +----------+</span>
+
+ <span class="k">SELECT</span> <span class="mi">1</span> <span class="o">-</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | -1       |</span>
+<span class="c1">-- +----------+</span>
+
+ <span class="k">SELECT</span> <span class="mi">1</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 2        |</span>
+<span class="c1">-- +----------+</span>
+
+ <span class="k">SELECT</span> <span class="mi">1</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 0        |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">10</span> <span class="o">^</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 100.0    |</span>
+<span class="c1">-- +----------+</span>
+
+<span class="k">SELECT</span> <span class="n">factorial</span><span class="p">(</span><span class="mi">10</span><span class="p">);</span>
+<span class="c1">-- +-----------+</span>
+<span class="c1">-- | factorial |</span>
+<span class="c1">-- |-----------|</span>
+<span class="c1">-- | 3628800   |</span>
+<span class="c1">-- +-----------+</span>
+
+<span class="k">SELECT</span> <span class="mi">10</span> <span class="o">%</span> <span class="mi">3</span><span class="p">;</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 1        |</span>
+<span class="c1">-- +----------+</span>
+</code></pre></div></div>
+
+<h3 id="round">Round</h3>
+
+<p>Lets say there was a promotion and we wanted to display the price of all cars as well as their discounted price…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">make</span><span class="p">,</span>
+    <span class="n">model</span><span class="p">,</span>
+    <span class="n">price</span> <span class="k">AS</span> <span class="n">original_price</span><span class="p">,</span>                           <span class="c1">-- alias original_price</span>
+    <span class="n">ROUND</span><span class="p">(</span><span class="n">price</span> <span class="o">*</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">discounted_price</span><span class="p">,</span>         <span class="c1">-- alias discounted_price</span>
+    <span class="n">ROUND</span><span class="p">((</span><span class="n">price</span> <span class="o">-</span> <span class="n">price</span> <span class="o">*</span> <span class="mi">0</span><span class="p">.</span><span class="mi">9</span><span class="p">),</span> <span class="mi">2</span><span class="p">)</span> <span class="k">AS</span> <span class="n">discount_amount</span> <span class="c1">-- alias discounted_price</span>
+<span class="k">FROM</span> <span class="n">car</span>
+<span class="k">ORDER</span> <span class="k">BY</span> <span class="n">make</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="coalesce">Coalesce</h3>
+
+<p>You can hanle <code class="language-plaintext highlighter-rouge">NULL</code> values</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- will return the very first value that is present</span>
+<span class="k">SELECT</span> <span class="n">COALESCE</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number</span><span class="p">;</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | number |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 1      |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="n">COALESCE</span><span class="p">(</span><span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number</span><span class="p">;</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | number |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 1      |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="n">COALESCE</span><span class="p">(</span><span class="k">NULL</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number</span><span class="p">;</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | number |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 1      |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="n">COALESCE</span><span class="p">(</span><span class="k">NULL</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="k">AS</span> <span class="n">number</span><span class="p">;</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | number |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 1      |</span>
+<span class="c1">-- +--------+</span>
+
+<span class="k">SELECT</span>
+    <span class="n">first_name</span><span class="p">,</span>
+    <span class="n">last_name</span><span class="p">,</span>
+    <span class="n">COALESCE</span><span class="p">(</span><span class="n">email</span><span class="p">,</span> <span class="s1">'EMAIL NOT PROVIDED'</span><span class="p">)</span> <span class="k">AS</span> <span class="n">email</span>
+<span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +-------------+-----------------+-----------------------------------+</span>
+<span class="c1">-- | first_name  | last_name       | email                             |</span>
+<span class="c1">-- |-------------+-----------------+-----------------------------------|</span>
+<span class="c1">-- | Eadmund     | Dorsey          | EMAIL NOT PROVIDED                |</span>
+<span class="c1">-- | Benjamen    | Garnson         | bgarnson1@deviantart.com          |</span>
+<span class="c1">-- | Sven        | Philipsen       | sphilipsen2@jiathis.com           |</span>
+<span class="c1">-- | Geoffrey    | Heasly          | gheasly7@pinterest.com            |</span>
+<span class="c1">-- | Stavros     | Mapston         | smapston8@state.tx.us             |</span>
+<span class="c1">-- | Eolanda     | Kassman         | ekassmanb@furl.net                |</span>
+<span class="c1">-- | Iolanthe    | Avramovsky      | EMAIL NOT PROVIDED                |</span>
+<span class="c1">-- | Siana       | Woods           | EMAIL NOT PROVIDED                |</span>
+<span class="c1">-- | Marina      | Crampton        | mcramptonc@bizjournals.com        |</span>
+<span class="c1">-- | Domenico    | Kemston         | dkemstond@reference.com           |</span>
+<span class="c1">-- | Putnam      | Pirot           | ppirote@goo.gl                    |</span>
+<span class="c1">-- | Stern       | Oldacres        | EMAIL NOT PROVIDED                |</span>
+<span class="c1">-- ...</span>
+</code></pre></div></div>
+
+<h3 id="nullif">NULLIF</h3>
+
+<p>Handle division by zero…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- NULLIF takes 2 args and return the first arg if provided args are not matching</span>
+<span class="k">SELECT</span> <span class="mi">10</span> <span class="o">/</span> <span class="mi">0</span><span class="p">;</span>
+<span class="c1">-- ERROR: division by zero</span>
+
+<span class="k">SELECT</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | nullif |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | &lt;null&gt; |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">);</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | nullif |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 10     |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">19</span><span class="p">);</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | nullif |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 10     |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">);</span>
+<span class="c1">-- +--------+</span>
+<span class="c1">-- | nullif |</span>
+<span class="c1">-- |--------|</span>
+<span class="c1">-- | 100    |</span>
+<span class="c1">-- +--------+</span>
+<span class="k">SELECT</span> <span class="mi">10</span> <span class="o">/</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">0</span><span class="p">);</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 2        |</span>
+<span class="c1">-- +----------+</span>
+<span class="k">SELECT</span> <span class="mi">10</span> <span class="o">/</span> <span class="n">COALESCE</span><span class="p">(</span><span class="k">NULLIF</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">));</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | ?column? |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | &lt;null&gt;   |</span>
+<span class="c1">-- +----------+</span>
+<span class="k">SELECT</span> <span class="n">COALESCE</span><span class="p">(</span><span class="mi">10</span> <span class="o">/</span> <span class="k">NULLIF</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> <span class="mi">0</span><span class="p">);</span>
+<span class="c1">-- +----------+</span>
+<span class="c1">-- | coalesce |</span>
+<span class="c1">-- |----------|</span>
+<span class="c1">-- | 0        |</span>
+<span class="c1">-- +----------+</span>
+</code></pre></div></div>
+
+<h2 id="timastamps-and-dates">Timastamps and dates</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">NOW</span><span class="p">();</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | now                           |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-11-26 17:29:40.635535+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()::</span><span class="nb">DATE</span> <span class="k">AS</span> <span class="k">current_date</span><span class="p">;</span> <span class="c1">-- cast to date</span>
+<span class="c1">-- +--------------+</span>
+<span class="c1">-- | current_date |</span>
+<span class="c1">-- |--------------|</span>
+<span class="c1">-- | 2023-11-26   |</span>
+<span class="c1">-- +--------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()::</span><span class="nb">TIME</span> <span class="k">AS</span> <span class="k">current_time</span><span class="p">;</span> <span class="c1">-- cast to time</span>
+<span class="c1">-- +-----------------+</span>
+<span class="c1">-- | current_time    |</span>
+<span class="c1">-- |-----------------|</span>
+<span class="c1">-- | 17:29:40.645954 |</span>
+<span class="c1">-- +-----------------+</span>
+</code></pre></div></div>
+
+<p>Check out the <a href="https://www.postgresql.org/docs/16/datatype-datetime.html" target="\_blank">docs</a>
+for more.</p>
+
+<h3 id="adding-and-subtracting-with-dates-interval">Adding and subtracting with dates (INTERVAL)</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+ <span class="c1">-- ADDING</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'1 day'</span><span class="p">;</span>     <span class="c1">-- 1 day from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-11-27 21:59:42.626857+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'10 days'</span><span class="p">;</span>   <span class="c1">-- 10 days from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-12-06 21:59:42.632817+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'1 month'</span><span class="p">;</span>   <span class="c1">-- 1 month from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-12-26 21:59:42.635898+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'10 months'</span><span class="p">;</span> <span class="c1">-- 10 months from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2024-09-26 21:59:42.639113+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'1 year'</span><span class="p">;</span>    <span class="c1">-- 1 year from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2024-11-26 21:59:42.642619+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'10 years'</span><span class="p">;</span>  <span class="c1">-- 10 years from now</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2033-11-26 21:59:42.645611+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- SUBTRACTING</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'1 day'</span><span class="p">;</span>     <span class="c1">-- 1 day ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-11-25 21:59:42.648543+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'10 days'</span><span class="p">;</span>   <span class="c1">-- 10 days ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-11-16 21:59:42.651517+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'1 month'</span><span class="p">;</span>   <span class="c1">-- 1 month ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-10-26 21:59:42.654834+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'10 months'</span><span class="p">;</span> <span class="c1">-- 10 months ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2023-01-26 21:59:42.658143+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'1 year'</span><span class="p">;</span>    <span class="c1">-- 1 year ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2022-11-26 21:59:42.661703+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="k">SELECT</span> <span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'10 years'</span><span class="p">;</span>  <span class="c1">-- 10 years ago</span>
+<span class="c1">-- +-------------------------------+</span>
+<span class="c1">-- | ?column?                      |</span>
+<span class="c1">-- |-------------------------------|</span>
+<span class="c1">-- | 2013-11-26 21:59:42.665242+00 |</span>
+<span class="c1">-- +-------------------------------+</span>
+</code></pre></div></div>
+
+<p>If you want just the date you can caste it like so…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="p">(</span><span class="n">NOW</span><span class="p">()</span> <span class="o">+</span> <span class="n">INTERVAL</span> <span class="s1">'10 years'</span><span class="p">)::</span><span class="nb">DATE</span><span class="p">;</span>  <span class="c1">-- 10 years from now</span>
+<span class="c1">-- +------------+</span>
+<span class="c1">-- | date       |</span>
+<span class="c1">-- |------------|</span>
+<span class="c1">-- | 2033-11-26 |</span>
+<span class="c1">-- +------------+</span>
+<span class="k">SELECT</span> <span class="p">(</span><span class="n">NOW</span><span class="p">()</span> <span class="o">-</span> <span class="n">INTERVAL</span> <span class="s1">'10 years'</span><span class="p">)::</span><span class="nb">DATE</span><span class="p">;</span>  <span class="c1">-- 10 years ago</span>
+<span class="c1">-- +------------+</span>
+<span class="c1">-- | date       |</span>
+<span class="c1">-- |------------|</span>
+<span class="c1">-- | 2013-11-26 |</span>
+<span class="c1">-- +------------+</span>
+</code></pre></div></div>
+
+<h3 id="extracting-fields">Extracting fields</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="c1">-- just for reference for below table</span>
+<span class="k">SELECT</span> <span class="n">NOw</span><span class="p">()::</span><span class="nb">DATE</span><span class="p">;</span>
+<span class="c1">-- +------------+</span>
+<span class="c1">-- | now        |</span>
+<span class="c1">-- |------------|</span>
+<span class="c1">-- | 2023-11-26 |</span>
+<span class="c1">-- +------------+</span>
+
+<span class="k">SELECT</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="nb">YEAR</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="nb">year</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="k">MONTH</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="k">month</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="k">DAY</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="k">day</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="n">DOW</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="n">day_of_week</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="n">HOUR</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="n">hour</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="k">MINUTE</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="k">minute</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="k">SECOND</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="k">second</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="n">MICROSECOND</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="n">microsecond</span><span class="p">,</span>
+    <span class="k">EXTRACT</span><span class="p">(</span><span class="n">WEEK</span> <span class="k">FROM</span> <span class="n">NOW</span><span class="p">())</span> <span class="k">AS</span> <span class="n">week</span><span class="p">;</span>
+<span class="c1">-- +------+-------+-----+-------------+------+--------+-----------+-------------+------+</span>
+<span class="c1">-- | year | month | day | day_of_week | hour | minute | second    | microsecond | week |</span>
+<span class="c1">-- |------+-------+-----+-------------+------+--------+-----------+-------------+------|</span>
+<span class="c1">-- | 2023 | 11    | 26  | 0           | 22   | 24     | 35.083122 | 35083122    | 47   |</span>
+<span class="c1">-- +------+-------+-----+-------------+------+--------+-----------+-------------+------+</span>
+</code></pre></div></div>
+
+<h2 id="age-function">Age function</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">first_name</span><span class="p">,</span>
+    <span class="n">last_name</span><span class="p">,</span>
+    <span class="n">gender</span><span class="p">,</span>
+    <span class="n">date_of_birth</span><span class="p">,</span>
+    <span class="n">AGE</span><span class="p">(</span><span class="n">NOW</span><span class="p">(),</span>
+    <span class="n">date_of_birth</span><span class="p">)</span> <span class="k">AS</span> <span class="n">age</span>
+<span class="k">FROM</span> <span class="n">person</span> <span class="k">LIMIT</span> <span class="mi">10</span><span class="p">;;</span>
+<span class="c1">-- +------------+-----------+--------+---------------+--------------------------+</span>
+<span class="c1">-- | first_name | last_name | gender | date_of_birth | age                      |</span>
+<span class="c1">-- |------------+-----------+--------+---------------+--------------------------|</span>
+<span class="c1">-- | Eadmund    | Dorsey    | MALE   | 2022-12-12    | 345 days, 0:19:49.144054 |</span>
+<span class="c1">-- | Benjamen   | Garnson   | MALE   | 2023-03-18    | 249 days, 0:19:49.144054 |</span>
+<span class="c1">-- | Sven       | Philipsen | MALE   | 2023-11-18    | 9 days, 0:19:49.144054   |</span>
+<span class="c1">-- | Mordy      | Albasini  | MALE   | 2023-09-25    | 62 days, 0:19:49.144054  |</span>
+<span class="c1">-- | Arley      | Naish     | MALE   | 2023-10-13    | 44 days, 0:19:49.144054  |</span>
+<span class="c1">-- | Kim        | Enriques  | FEMALE | 2023-06-17    | 160 days, 0:19:49.144054 |</span>
+<span class="c1">-- | Amaleta    | Jamot     | FEMALE | 2023-09-02    | 85 days, 0:19:49.144054  |</span>
+<span class="c1">-- | Geoffrey   | Heasly    | MALE   | 2023-11-14    | 13 days, 0:19:49.144054  |</span>
+<span class="c1">-- | Stavros    | Mapston   | MALE   | 2023-03-10    | 257 days, 0:19:49.144054 |</span>
+<span class="c1">-- | Hebert     | Duckwith  | MALE   | 2023-02-27    | 270 days, 0:19:49.144054 |</span>
+<span class="c1">-- +------------+-----------+--------+---------------+--------------------------+</span>
+</code></pre></div></div>
+
+<h2 id="primary-key">Primary key</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span>
+  <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'EAdmund'</span><span class="p">,</span> <span class="s1">'Dorsey'</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2022/12/12'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">);</span>
+
+<span class="c1">-- duplicate key value violates unique constraint "person_pkey"</span>
+<span class="c1">-- DETAIL:  Key (id)=(1) already exists.</span>
+</code></pre></div></div>
+
+<h3 id="alter-table">Alter table</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- remove the primary key constraint</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span>
+    <span class="k">DROP</span> <span class="k">CONSTRAINT</span> <span class="n">person_pkey</span><span class="p">;</span>
+
+<span class="c1">-- now the insert statement from before should work</span>
+<span class="k">INSERT</span> <span class="k">INTO</span>
+   <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+ <span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'EAdmund'</span><span class="p">,</span> <span class="s1">'Dorsey'</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2022/12/12'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">);</span>
+
+<span class="c1">--- INSERT 0 1</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email  | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+--------+------------------|</span>
+<span class="c1">-- | 1  | Eadmund    | Dorsey    | MALE   | 2022-12-12    | &lt;null&gt; | China            |</span>
+<span class="c1">-- | 1  | EAdmund    | Dorsey    | MALE   | 2022-12-12    | &lt;null&gt; | China            |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+</code></pre></div></div>
+
+<p>This should show the importance of primary key contraints as without it we can not distinguish between the 2 records returned.</p>
+
+<h3 id="adding-primary-key">Adding primary key</h3>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="c1">--- add back the primary key</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="k">ADD</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">);</span>
+<span class="c1">-- could not create unique index "person_pkey"</span>
+<span class="c1">-- DETAIL:  Key (id)=(1) is duplicated.</span>
+</code></pre></div></div>
+
+<p>We have to delete those records before adding back the constraint.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+-------+------------------|</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+</code></pre></div></div>
+
+<p>Now that person can be added back…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span>
+   <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="s1">'EAdmund'</span><span class="p">,</span> <span class="s1">'Dorsey'</span><span class="p">,</span> <span class="k">NULL</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2022/12/12'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">);</span>
+
+<span class="c1">-- INSERT 0 1</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email  | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+--------+------------------|</span>
+<span class="c1">-- | 1  | EAdmund    | Dorsey    | MALE   | 2022-12-12    | &lt;null&gt; | China            |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+</code></pre></div></div>
+
+<p>Now we can add the primary key constraint…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="k">ADD</span> <span class="k">PRIMARY</span> <span class="k">KEY</span> <span class="p">(</span><span class="n">id</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="unique-constraints">Unique constraints</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">email</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">email</span><span class="p">;</span>
+<span class="c1">-- +-----------------------------------+-------+</span>
+<span class="c1">-- | email                             | count |</span>
+<span class="c1">-- |-----------------------------------+-------|</span>
+<span class="c1">-- | telcox15@phoca.cz                 | 1     |</span>
+<span class="c1">-- | sstoeck1p@amazon.co.uk            | 1     |</span>
+<span class="c1">-- | &lt;null&gt;                            | 53    |</span>
+<span class="c1">-- | etrundler1q@homestead.com         | 1     |</span>
+<span class="c1">-- | cgranleesey@aboutads.info         | 1     |</span>
+<span class="c1">-- | tpovele10@wsj.com                 | 1     |</span>
+<span class="c1">-- ...</span>
+
+<span class="c1">-- check for duplicate emails</span>
+<span class="k">SELECT</span> <span class="n">email</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">email</span> <span class="k">HAVING</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +--------+-------+</span>
+<span class="c1">-- | email  | count |</span>
+<span class="c1">-- |--------+-------|</span>
+<span class="c1">-- | &lt;null&gt; | 53    |</span>
+<span class="c1">-- +--------+-------+</span>
+</code></pre></div></div>
+
+<p>Lets add another record…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Sammy'</span><span class="p">,</span> <span class="s1">'Albasini'</span><span class="p">,</span> <span class="s1">'sini3@bbc.co.uk'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/09/25'</span><span class="p">,</span> <span class="s1">'Belarus'</span><span class="p">);</span>
+
+<span class="c1">-- now we have a duplicate</span>
+
+<span class="k">SELECT</span> <span class="n">email</span><span class="p">,</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">GROUP</span> <span class="k">BY</span> <span class="n">email</span> <span class="k">HAVING</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----------------------+-------+</span>
+<span class="c1">-- | email                | count |</span>
+<span class="c1">-- |----------------------+-------|</span>
+<span class="c1">-- | &lt;null&gt;               | 53    |</span>
+<span class="c1">-- | sini3@bbc.co.uk | 2     |</span>
+<span class="c1">-- +----------------------+-------+</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">email</span> <span class="o">=</span> <span class="s1">'sini3@bbc.co.uk'</span><span class="p">;</span>
+<span class="c1">-- +-----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+<span class="c1">-- | id  | first_name | last_name | gender | date_of_birth | email           | country_of_birth |</span>
+<span class="c1">-- |-----+------------+-----------+--------+---------------+-----------------+------------------|</span>
+<span class="c1">-- | 4   | Mordy      | Albasini  | MALE   | 2023-09-25    | sini3@bbc.co.uk | Belarus          |</span>
+<span class="c1">-- | 201 | Sammy      | Albasini  | MALE   | 2023-09-25    | sini3@bbc.co.uk | Belarus          |</span>
+<span class="c1">-- +-----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+</code></pre></div></div>
+
+<p>Lets add the unique constraint…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">--- add unique email constraint to person table</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">unique_email_address</span> <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">email</span><span class="p">);</span>
+<span class="c1">-- could not create unique index "unique_email_address"</span>
+<span class="c1">-- DETAIL:  Key (email)=(sini3@bbc.co.uk) is duplicated.</span>
+
+<span class="c1">-- another way of adding constraint</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="k">ADD</span> <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">email</span><span class="p">);</span> <span class="c1">-- this way postgres adds the name of the constraint</span>
+</code></pre></div></div>
+
+<p>Lets fix that</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">201</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">email</span> <span class="o">=</span> <span class="s1">'sini3@bbc.co.uk'</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+-------+------------------|</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+<span class="k">ALTER</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">unique_email_address</span> <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">email</span><span class="p">);</span>
+
+<span class="err">\</span><span class="n">d</span> <span class="n">person</span>
+<span class="c1">-- ...</span>
+<span class="c1">-- Indexes:</span>
+<span class="c1">--     "person_pkey" PRIMARY KEY, btree (id)</span>
+<span class="c1">--     "unique_email_address" UNIQUE CONSTRAINT, btree (email)</span>
+
+<span class="c1">-- now we can not add that record again</span>
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Sammy'</span><span class="p">,</span> <span class="s1">'Albasini'</span><span class="p">,</span> <span class="s1">'sini3@bbc.co.uk'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/09/25'</span><span class="p">,</span> <span class="s1">'Belarus'</span><span class="p">);</span>
+<span class="c1">-- duplicate key value violates unique constraint "unique_email_address"</span>
+<span class="c1">-- DETAIL:  Key (email)=(sini3@bbc.co.uk) already exists.</span>
+</code></pre></div></div>
+
+<h2 id="primary-key-vs-unique-constraint">Primary key vs Unique constraint</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Primary ensures</code> unique rows and <code class="language-plaintext highlighter-rouge">Unique constraint</code> ensures unique values in column.</p>
+
+<h2 id="check-constraint">Check constraint</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="k">ALTER</span> <span class="k">TABLE</span>
+    <span class="n">person</span>
+<span class="k">ADD</span> <span class="k">CONSTRAINT</span> <span class="n">gender_constraint</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">gender</span> <span class="o">=</span> <span class="s1">'MALE'</span> <span class="k">OR</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">'FEMALE'</span><span class="p">);</span>
+
+<span class="c1">-- now gender can only be 'MALE' OR gender = 'FEMALE'</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Sammy'</span><span class="p">,</span> <span class="s1">'sini'</span><span class="p">,</span> <span class="s1">'sini3@bbc.co.uk'</span><span class="p">,</span> <span class="s1">'helloooooooo'</span><span class="p">,</span> <span class="s1">'2023/09/25'</span><span class="p">,</span> <span class="s1">'Belarus'</span><span class="p">);</span>
+<span class="c1">-- check constraint "gender_constraint" of relation "person" is violated by some row</span>
+</code></pre></div></div>
+
+<h2 id="delete-records">Delete records</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">-- delete everyone</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+
+<span class="c1">-- delete person with id 42</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">42</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+-------+------------------|</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-------+------------------+</span>
+
+<span class="c1">-- can use multiple conditions in where clause</span>
+
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">'MALE'</span> <span class="k">AND</span> <span class="n">country_of_birth</span> <span class="o">=</span> <span class="s1">'Peru'</span><span class="p">;</span>
+<span class="c1">-- +-------+</span>
+<span class="c1">-- | count |</span>
+<span class="c1">-- |-------|</span>
+<span class="c1">-- | 2     |</span>
+<span class="c1">-- +-------+</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">'MALE'</span> <span class="k">AND</span> <span class="n">country_of_birth</span> <span class="o">=</span> <span class="s1">'Peru'</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="k">COUNT</span><span class="p">(</span><span class="o">*</span><span class="p">)</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">gender</span> <span class="o">=</span> <span class="s1">'MALE'</span> <span class="k">AND</span> <span class="n">country_of_birth</span> <span class="o">=</span> <span class="s1">'Peru'</span><span class="p">;</span>
+<span class="c1">-- +-------+</span>
+<span class="c1">-- | count |</span>
+<span class="c1">-- |-------|</span>
+<span class="c1">-- | 0     |</span>
+<span class="c1">-- +-------+</span>
+</code></pre></div></div>
+
+<h2 id="update-records">Update records</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email  | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+--------+------------------|</span>
+<span class="c1">-- | 1  | EAdmund    | Dorsey    | MALE   | 2022-12-12    | &lt;null&gt; | China            |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+--------+------------------+</span>
+
+<span class="c1">-- add an email to this guy</span>
+<span class="k">UPDATE</span> <span class="n">person</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="s1">'edorsey@mail.com'</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">email</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------------+</span>
+<span class="c1">-- | id | email            |</span>
+<span class="c1">-- |----+------------------|</span>
+<span class="c1">-- | 1  | edorsey@mail.com |</span>
+<span class="c1">-- +----+------------------+</span>
+
+<span class="c1">-- you can update</span>
+<span class="k">UPDATE</span> <span class="n">person</span> <span class="k">SET</span> <span class="n">first_name</span> <span class="o">=</span> <span class="s1">'Ed'</span><span class="p">,</span> <span class="n">last_name</span> <span class="o">=</span> <span class="s1">'Dorsy'</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="k">SELECT</span> <span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+</span>
+<span class="c1">-- | id | first*name | last*name |</span>
+<span class="c1">-- |----+------------+-----------|</span>
+<span class="c1">-- | 1  | Ed         | Dorsy     |</span>
+<span class="c1">-- +----+------------+-----------+</span>
+</code></pre></div></div>
+
+<h3 id="note-about-updating">Note about updating</h3>
+
+<p>Make sure you specify a ‘WHERE’ clause as omitting it would update the entire table.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="n">person</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="s1">'edorsey@mail.com'</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span> <span class="c1">-- only updates EAdmund</span>
+
+<span class="k">UPDATE</span> <span class="n">person</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="s1">'edorsey@mail.com'</span><span class="p">;</span>              <span class="c1">-- updates all rows</span>
+</code></pre></div></div>
+
+<h2 id="on-conflict-do-nothing">On conflict, do nothing</h2>
+
+<p>Lets handle things like exceptions or <code class="language-plaintext highlighter-rouge">duplicate key errors</code>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">31</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email           | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+-----------------+------------------|</span>
+<span class="c1">-- | 31 | Marietta   | Nadin     | MALE   | 2023-05-23    | mnadinu@psu.edu | China            |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-----------------+------------------+</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Marietta'</span><span class="p">,</span> <span class="s1">'Nadin'</span><span class="p">,</span> <span class="s1">'mnadinu@psu.edu'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/05/23'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">);</span>
+<span class="c1">-- duplicate key value violates unique constraint "unique_email_address"</span>
+<span class="c1">-- DETAIL:  Key (email)=(mnadinu@psu.edu) already exists.</span>
+
+<span class="c1">-- we can handle exceptions with `ON CNFLICT`</span>
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="s1">'Marietta'</span><span class="p">,</span> <span class="s1">'Nadin'</span><span class="p">,</span> <span class="s1">'mnadinu@psu.edu'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/05/23'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">)</span>
+<span class="k">ON</span> <span class="n">CONFLICT</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="k">DO</span> <span class="k">NOTHING</span><span class="p">;</span>
+
+<span class="c1">-- INSERT 0 0                               -- Note no inserts</span>
+<span class="c1">-- Time: 0.009sN CONFLICT (id) DO NOTHING;</span>
+
+<span class="c1">-- ensure that ON CONFLICT takes a column that has a constraint</span>
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">31</span><span class="p">,</span> <span class="s1">'Marietta'</span><span class="p">,</span> <span class="s1">'Nadin'</span><span class="p">,</span> <span class="s1">'mnadinu@psu.edu'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/05/23'</span><span class="p">,</span> <span class="s1">'China'</span><span class="p">)</span>
+<span class="k">ON</span> <span class="n">CONFLICT</span> <span class="p">(</span><span class="n">first_name</span><span class="p">)</span> <span class="k">DO</span> <span class="k">NOTHING</span><span class="p">;</span>
+
+<span class="c1">-- there is no unique or exclusion constraint matching the ON CONFLICT specification</span>
+</code></pre></div></div>
+
+<h2 id="upsert">Upsert</h2>
+
+<p>Imagine 2 inserts happen consecutively but the user changes, for example, the email.
+We can assume the latest submitted email is the correct one…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code> <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+----------------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email          | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+----------------+------------------|</span>
+<span class="c1">-- | 15 | Putnam     | Pirot     | MALE   | 2023-06-04    | ppirote@goo.gl | Indonesia        |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+----------------+------------------+</span>
+
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">id</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">date_of_birth</span><span class="p">,</span> <span class="n">country_of_birth</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="s1">'Putnam'</span><span class="p">,</span> <span class="s1">'Pirot'</span><span class="p">,</span> <span class="s1">'pp@goo.gl'</span><span class="p">,</span> <span class="s1">'MALE'</span><span class="p">,</span> <span class="s1">'2023/06/04'</span><span class="p">,</span> <span class="s1">'Indonesia'</span><span class="p">);</span>
+<span class="k">ON</span> <span class="n">CONFLICT</span> <span class="p">(</span><span class="n">id</span><span class="p">)</span> <span class="k">DO</span> <span class="k">UPDATE</span> <span class="k">SET</span> <span class="n">email</span> <span class="o">=</span> <span class="n">EXCLUDED</span><span class="p">.</span><span class="n">email</span><span class="p">;</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- Time: 0.021s</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">15</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-----------+------------------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | date_of_birth | email     | country_of_birth |</span>
+<span class="c1">-- |----+------------+-----------+--------+---------------+-----------+------------------|</span>
+<span class="c1">-- | 15 | Putnam     | Pirot     | MALE   | 2023-06-04    | pp@goo.gl | Indonesia        |</span>
+<span class="c1">-- +----+------------+-----------+--------+---------------+-----------+------------------+</span>
+</code></pre></div></div>
+
+<h2 id="foreign-keys-joins-and-relationships">Foreign keys, joins and relationships</h2>
+
+<p>A foreign key in one table references a primary key in another table. This is a relationship.</p>
+
+<p>We currently have two tables; <code class="language-plaintext highlighter-rouge">person</code> and <code class="language-plaintext highlighter-rouge">car</code> and we want to establish a relationship
+between them as follows;</p>
+
+<ul>
+  <li>A <code class="language-plaintext highlighter-rouge">person</code> has one <code class="language-plaintext highlighter-rouge">car</code> (can only have one car)</li>
+  <li>A car <code class="language-plaintext highlighter-rouge">can</code> only belong to one <code class="language-plaintext highlighter-rouge">person</code></li>
+</ul>
+
+<h3 id="adding-relationships-between-tables">Adding relationships between tables</h3>
+
+<p>If we were to rewrite the <code class="language-plaintext highlighter-rouge">person</code> and <code class="language-plaintext highlighter-rouge">car</code> tables with respect to the reltionship described above…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">car</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="n">BIGSERIAL</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">make</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">model</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">price</span> <span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="p">(</span>
+    <span class="n">id</span> <span class="n">BIGSERIAL</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">first_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">last_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">gender</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+    <span class="n">dob</span> <span class="nb">DATE</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">country</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">car_id</span> <span class="nb">BIGINT</span> <span class="k">REFERENCES</span> <span class="n">car</span> <span class="p">(</span><span class="n">id</span><span class="p">),</span>
+    <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">car_id</span><span class="p">)</span>
+<span class="p">);</span>
+</code></pre></div></div>
+
+<p>See <a href="https://github.com/genzade/postGRES/blob/main/sql/person-car.sql" target="\_blank">person-car.sql file</a>.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- You're about to run a destructive command.</span>
+<span class="c1">-- Do you want to proceed? [y/N]: y</span>
+<span class="c1">-- Your call!</span>
+<span class="c1">-- DROP TABLE</span>
+<span class="c1">-- Time: 0.030s</span>
+
+<span class="k">DROP</span> <span class="k">TABLE</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- You're about to run a destructive command.</span>
+<span class="c1">-- Do you want to proceed? [y/N]: y</span>
+<span class="c1">-- Your call!</span>
+<span class="c1">-- DROP TABLE</span>
+<span class="c1">-- Time: 0.014s</span>
+
+<span class="err">\</span><span class="n">i</span> <span class="k">sql</span><span class="o">/</span><span class="n">person</span><span class="o">-</span><span class="n">car</span><span class="p">.</span><span class="k">sql</span>
+<span class="c1">-- CREATE TABLE</span>
+<span class="c1">-- CREATE TABLE</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- Time: 0.055s</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+---------+--------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | email          | dob        | country | car_id |</span>
+<span class="c1">-- |----+------------+-----------+--------+----------------+------------+---------+--------|</span>
+<span class="c1">-- | 1  | Fernanda   | Beardon   | Female | nandab@is.gd   | 1953-10-28 | Comoros | &lt;null&gt; |</span>
+<span class="c1">-- | 2  | Omar       | Colmore   | Male   | &lt;null&gt;         | 1921-04-03 | Finland | &lt;null&gt; |</span>
+<span class="c1">-- | 3  | John       | Matuschek | Male   | jon@fdbrnr.com | 1965-02-28 | England | &lt;null&gt; |</span>
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+---------+--------+</span>
+<span class="c1">-- SELECT 3</span>
+<span class="c1">-- Time: 0.017s</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +----+------------+----------+----------+</span>
+<span class="c1">-- | id | make       | model    | price    |</span>
+<span class="c1">-- |----+------------+----------+----------|</span>
+<span class="c1">-- | 1  | Land Rover | Sterling | 87665.38 |</span>
+<span class="c1">-- | 2  | GMC        | Acadia   | 17662.69 |</span>
+<span class="c1">-- +----+------------+----------+----------+</span>
+<span class="c1">-- SELECT 2</span>
+</code></pre></div></div>
+
+<h3 id="updating-foreign-keys-columns">Updating foreign keys columns</h3>
+
+<p>Lets assign two cars to two people…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">UPDATE</span> <span class="n">person</span>
+<span class="k">SET</span> <span class="n">car_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">-- GMC</span>
+<span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>  <span class="c1">-- Fernanda</span>
+<span class="c1">-- UPDATE 1</span>
+<span class="c1">-- Time: 0.035s</span>
+
+<span class="c1">-- see the unique constraint work</span>
+<span class="k">UPDATE</span> <span class="n">person</span>
+<span class="k">SET</span> <span class="n">car_id</span> <span class="o">=</span> <span class="mi">2</span> <span class="c1">-- GMC</span>
+<span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>  <span class="c1">-- Omar</span>
+<span class="c1">-- duplicate key value violates unique constraint "person_car_id_key"</span>
+<span class="c1">-- DETAIL:  Key (car_id)=(2) already exists.</span>
+
+<span class="k">UPDATE</span> <span class="n">person</span>
+<span class="k">SET</span> <span class="n">car_id</span> <span class="o">=</span> <span class="mi">1</span> <span class="c1">-- GMC</span>
+<span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>  <span class="c1">-- Omar</span>
+<span class="c1">-- UPDATE 1</span>
+<span class="c1">-- Time: 0.021s</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+---------+--------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | email          | dob        | country | car_id |</span>
+<span class="c1">-- |----+------------+-----------+--------+----------------+------------+---------+--------|</span>
+<span class="c1">-- | 3  | John       | Matuschek | Male   | jon@fdbrnr.com | 1965-02-28 | England | &lt;null&gt; |</span>
+<span class="c1">-- | 1  | Fernanda   | Beardon   | Female | nandab@is.gd   | 1953-10-28 | Comoros | 2      |</span>
+<span class="c1">-- | 2  | Omar       | Colmore   | Male   | &lt;null&gt;         | 1921-04-03 | Finland | 1      |</span>
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+---------+--------+</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +----+------------+----------+----------+</span>
+<span class="c1">-- | id | make       | model    | price    |</span>
+<span class="c1">-- |----+------------+----------+----------|</span>
+<span class="c1">-- | 1  | Land Rover | Sterling | 87665.38 |</span>
+<span class="c1">-- | 2  | GMC        | Acadia   | 17662.69 |</span>
+<span class="c1">-- +----+------------+----------+----------+</span>
+<span class="c1">-- SELECT 2</span>
+</code></pre></div></div>
+
+<h2 id="inner-joins">Inner joins</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">first_name</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">price</span>
+<span class="k">FROM</span> <span class="n">person</span>
+<span class="k">JOIN</span> <span class="n">car</span> <span class="k">ON</span> <span class="n">person</span><span class="p">.</span><span class="n">car_id</span> <span class="o">=</span> <span class="n">car</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+<span class="c1">-- INNER JOIN car ON person.car_id = car.id; -- same as above</span>
+
+<span class="c1">-- +------------+------------+----------+----------+</span>
+<span class="c1">-- | first_name | make       | model    | price    |</span>
+<span class="c1">-- |------------+------------+----------+----------|</span>
+<span class="c1">-- | Omar       | Land Rover | Sterling | 87665.38 |</span>
+<span class="c1">-- | Fernanda   | GMC        | Acadia   | 17662.69 |</span>
+<span class="c1">-- +------------+------------+----------+----------+</span>
+</code></pre></div></div>
+
+<h2 id="left-joins">Left joins</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span>
+    <span class="n">first_name</span><span class="p">,</span> <span class="n">make</span><span class="p">,</span> <span class="n">model</span><span class="p">,</span> <span class="n">price</span>
+<span class="k">FROM</span> <span class="n">person</span>
+<span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">car</span> <span class="k">ON</span> <span class="n">person</span><span class="p">.</span><span class="n">car_id</span> <span class="o">=</span> <span class="n">car</span><span class="p">.</span><span class="n">id</span><span class="p">;</span>
+<span class="c1">-- +------------+------------+----------+----------+</span>
+<span class="c1">-- | first_name | make       | model    | price    |</span>
+<span class="c1">-- |------------+------------+----------+----------|</span>
+<span class="c1">-- | Omar       | Land Rover | Sterling | 87665.38 |</span>
+<span class="c1">-- | Fernanda   | GMC        | Acadia   | 17662.69 |</span>
+<span class="c1">-- | John       | &lt;null&gt;     | &lt;null&gt;   | &lt;null&gt;   |</span>
+<span class="c1">-- +------------+------------+----------+----------+</span>
+</code></pre></div></div>
+
+<h2 id="deleting-records-with-foreingn-keys">Deleting records with foreingn keys</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">car</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- update or delete on table "car" violates foreign key constraint ,,,</span>
+<span class="c1">-- DETAIL:  Key (id)=(2) is still referenced from table "person".</span>
+</code></pre></div></div>
+
+<p>To achieve this you could first <code class="language-plaintext highlighter-rouge">DELETE</code> the <code class="language-plaintext highlighter-rouge">person</code> the car belongs to…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">WHERE</span> <span class="n">car_id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+<span class="c1">-- then</span>
+<span class="k">DELETE</span> <span class="k">FROM</span> <span class="n">car</span> <span class="k">WHERE</span> <span class="n">id</span> <span class="o">=</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="exporting-query-results-to-csv">Exporting query results to CSV</h2>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="k">copy</span> <span class="p">(</span>
+     <span class="k">SELECT</span> <span class="o">*</span>
+     <span class="k">FROM</span> <span class="n">person</span>
+     <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">car</span> <span class="k">ON</span> <span class="n">person</span><span class="p">.</span><span class="n">car_id</span> <span class="o">=</span> <span class="n">car</span><span class="p">.</span><span class="n">id</span>
+ <span class="p">)</span> <span class="k">TO</span> <span class="s1">'/path/to/file.csv'</span> <span class="n">CSV</span> <span class="n">HEADER</span><span class="p">;</span> <span class="c1">-- include headers</span>
+</code></pre></div></div>
+
+<h2 id="serial-and-sequences">Serial and sequences</h2>
+
+<p><code class="language-plaintext highlighter-rouge">BIGSERIAL</code> is a special data type that auto increments a number (<code class="language-plaintext highlighter-rouge">integer</code>).</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="err">\</span><span class="n">d</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +------------+------------------------+------------------------------------------------------+</span>
+<span class="c1">-- | Column     | Type                   | Modifiers                                            |</span>
+<span class="c1">-- |------------+------------------------+------------------------------------------------------|</span>
+<span class="c1">-- | id         | bigint                 |  not null default nextval('person_id_seq'::regclass) |</span>
+<span class="c1">-- | first_name | character varying(50)  |  not null                                            |</span>
+<span class="c1">-- | last_name  | character varying(50)  |  not null                                            |</span>
+<span class="c1">-- | gender     | character varying(7)   |  not null                                            |</span>
+<span class="c1">-- | email      | character varying(100) |                                                      |</span>
+<span class="c1">-- | dob        | date                   |  not null                                            |</span>
+<span class="c1">-- | country    | character varying(50)  |  not null                                            |</span>
+<span class="c1">-- | car_id     | bigint                 |                                                      |</span>
+<span class="c1">-- +------------+------------------------+------------------------------------------------------+</span>
+<span class="c1">-- Indexes:</span>
+<span class="c1">--     "person_pkey" PRIMARY KEY, btree (id)</span>
+<span class="c1">--     "person_car_id_key" UNIQUE CONSTRAINT, btree (car_id)</span>
+<span class="c1">-- Foreign-key constraints:</span>
+<span class="c1">--     "person_car_id_fkey" FOREIGN KEY (car_id) REFERENCES car(id)</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person_id_seq</span><span class="p">;</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- | last_value | log_cnt | is_called |</span>
+<span class="c1">-- |------------+---------+-----------|</span>
+<span class="c1">-- | 4          | 31      | True      |</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.013s</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+-----------+--------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | email          | dob        | country   | car_id |</span>
+<span class="c1">-- |----+------------+-----------+--------+----------------+------------+-----------+--------|</span>
+<span class="c1">-- | 3  | John       | Matuschek | Male   | jon@fdbrnr.com | 1965-02-28 | England   | &lt;null&gt; |</span>
+<span class="c1">-- | 1  | Fernanda   | Beardon   | Female | nandab@is.gd   | 1953-10-28 | Comoros   | 2      |</span>
+<span class="c1">-- | 2  | Omar       | Colmore   | Male   | &lt;null&gt;         | 1921-04-03 | Finland   | 1      |</span>
+<span class="c1">-- | 4  | Stern      | Oldacres  | Male   | &lt;null&gt;         | 2023-09-22 | Indonesia | 3      |</span>
+<span class="c1">-- +----+------------+-----------+--------+----------------+------------+-----------+--------+</span>
+<span class="c1">-- SELECT 4</span>
+<span class="c1">-- Time: 0.010s</span>
+
+<span class="c1">-- Last ID is 4</span>
+
+<span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 5       |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.022s</span>
+
+<span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 6       |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.022s</span>
+<span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 7       |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.009s</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person_id_seq</span><span class="p">;</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- | last_value | log_cnt | is_called |</span>
+<span class="c1">-- |------------+---------+-----------|</span>
+<span class="c1">-- | 7          | 31      | True      |</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.004s</span>
+
+<span class="c1">-- Now last ID is 7. So the next person added here will have the ID of 8</span>
+<span class="k">INSERT</span> <span class="k">INTO</span>
+    <span class="n">person</span> <span class="p">(</span><span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span><span class="p">,</span> <span class="n">email</span><span class="p">,</span> <span class="n">gender</span><span class="p">,</span> <span class="n">dob</span><span class="p">,</span> <span class="n">country</span><span class="p">)</span>
+<span class="k">VALUES</span> <span class="p">(</span><span class="s1">'Fiann'</span><span class="p">,</span> <span class="s1">'Pesik'</span><span class="p">,</span> <span class="s1">'fpesikq@senate.gov'</span><span class="p">,</span> <span class="s1">'Female'</span><span class="p">,</span> <span class="s1">'2023/03/07'</span><span class="p">,</span> <span class="s1">'Indonesia'</span><span class="p">);</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- Time: 0.016s</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +----+------------+-----------+--------+--------------------+------------+-----------+--------+</span>
+<span class="c1">-- | id | first_name | last_name | gender | email              | dob        | country   | car_id |</span>
+<span class="c1">-- |----+------------+-----------+--------+--------------------+------------+-----------+--------|</span>
+<span class="c1">-- | 3  | John       | Matuschek | Male   | jon@fdbrnr.com     | 1965-02-28 | England   | &lt;null&gt; |</span>
+<span class="c1">-- | 1  | Fernanda   | Beardon   | Female | nandab@is.gd       | 1953-10-28 | Comoros   | 2      |</span>
+<span class="c1">-- | 2  | Omar       | Colmore   | Male   | &lt;null&gt;             | 1921-04-03 | Finland   | 1      |</span>
+<span class="c1">-- | 4  | Stern      | Oldacres  | Male   | &lt;null&gt;             | 2023-09-22 | Indonesia | 3      |</span>
+<span class="c1">-- | 8  | Fiann      | Pesik     | Female | fpesikq@senate.gov | 2023-03-07 | Indonesia | &lt;null&gt; |</span>
+<span class="c1">-- +----+------------+-----------+--------+--------------------+------------+-----------+--------+</span>
+<span class="c1">-- SELECT 5</span>
+<span class="c1">-- Time: 0.013s</span>
+</code></pre></div></div>
+
+<p>You can restart the sequence as well with the following…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 9       |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.021s</span>
+<span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 10      |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.010s</span>
+
+<span class="k">SELECT</span> <span class="n">nextval</span><span class="p">(</span><span class="s1">'person_id_seq'</span><span class="p">::</span><span class="n">regclass</span><span class="p">);</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- | nextval |</span>
+<span class="c1">-- |---------|</span>
+<span class="c1">-- | 11      |</span>
+<span class="c1">-- +---------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.009s</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person_id_seq</span><span class="p">;</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- | last_value | log_cnt | is_called |</span>
+<span class="c1">-- |------------+---------+-----------|</span>
+<span class="c1">-- | 11         | 29      | True      |</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.008s</span>
+
+<span class="k">ALTER</span> <span class="n">SEQUENCE</span> <span class="n">person_id_seq</span> <span class="k">RESTART</span> <span class="k">WITH</span> <span class="mi">8</span><span class="p">;</span>
+<span class="c1">-- ALTER SEQUENCE</span>
+<span class="c1">-- Time: 0.026s</span>
+ <span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person_id_seq</span><span class="p">;</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- | last_value | log_cnt | is_called |</span>
+<span class="c1">-- |------------+---------+-----------|</span>
+<span class="c1">-- | 8          | 0       | False     |</span>
+<span class="c1">-- +------------+---------+-----------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.004s</span>
+</code></pre></div></div>
+
+<h2 id="extensions">Extensions</h2>
+
+<p>Check all the available postgres extensions with the following…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">pg_available_extension_versions</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h3 id="understanding-uuid-data-types">Understanding UUID data types</h3>
+
+<p>We are going to install the <a href="https://en.wikipedia.org/wiki/Universally_unique_identifier" target="\_blank"><code class="language-plaintext highlighter-rouge">Universally Unique Identitifiers</code></a> (UUID) extension.</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="n">EXTENSION</span> <span class="n">IF</span> <span class="k">NOT</span> <span class="k">EXISTS</span> <span class="nv">"uuid-ossp"</span><span class="p">;</span>
+<span class="c1">-- CREATE EXTENSION</span>
+
+<span class="c1">-- a list of all available functions</span>
+<span class="err">\</span><span class="n">df</span><span class="p">;</span>
+<span class="c1">-- +--------+--------------------+------------------+---------------------------+--------+</span>
+<span class="c1">-- | Schema | Name               | Result data type | Argument data types       | Type   |</span>
+<span class="c1">-- |--------+--------------------+------------------+---------------------------+--------|</span>
+<span class="c1">-- | public | uuid_generate_v1   | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_generate_v1mc | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_generate_v3   | uuid             | namespace uuid, name text | normal |</span>
+<span class="c1">-- | public | uuid_generate_v4   | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_generate_v5   | uuid             | namespace uuid, name text | normal |</span>
+<span class="c1">-- | public | uuid_nil           | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_ns_dns        | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_ns_oid        | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_ns_url        | uuid             |                           | normal |</span>
+<span class="c1">-- | public | uuid_ns_x500       | uuid             |                           | normal |</span>
+<span class="c1">-- +--------+--------------------+------------------+---------------------------+--------+</span>
+<span class="c1">-- SELECT 10</span>
+<span class="c1">-- Time: 0.093s</span>
+
+<span class="c1">-- generate a UUID v4 (random)</span>
+<span class="k">SELECT</span> <span class="n">uuid_generate_v4</span><span class="p">();</span>
+<span class="c1">-- +--------------------------------------+</span>
+<span class="c1">-- | uuid_generate_v4                     |</span>
+<span class="c1">-- |--------------------------------------|</span>
+<span class="c1">-- | 25edf5be-74b0-4ad0-9630-3d9fd9fb7db3 | -- &lt;-- will be unique every time function is invoked</span>
+<span class="c1">-- +--------------------------------------+</span>
+<span class="c1">-- SELECT 1</span>
+<span class="c1">-- Time: 0.098s</span>
+</code></pre></div></div>
+
+<h3 id="uuid-as-primary-keys">UUID as primary keys</h3>
+
+<p>We will modify our sql file slightly…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">car</span> <span class="p">(</span>
+    <span class="n">car_uid</span> <span class="n">UUID</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">make</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">model</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">price</span> <span class="nb">NUMERIC</span><span class="p">(</span><span class="mi">19</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">CHECK</span> <span class="p">(</span><span class="n">price</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="k">CREATE</span> <span class="k">TABLE</span> <span class="n">person</span> <span class="p">(</span>
+    <span class="n">person_uid</span> <span class="n">UUID</span> <span class="k">NOT</span> <span class="k">NULL</span> <span class="k">PRIMARY</span> <span class="k">KEY</span><span class="p">,</span>
+    <span class="n">first_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">last_name</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">gender</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">email</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">100</span><span class="p">),</span>
+    <span class="n">dob</span> <span class="nb">DATE</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">country</span> <span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span> <span class="k">NOT</span> <span class="k">NULL</span><span class="p">,</span>
+    <span class="n">car_uid</span> <span class="n">UUID</span> <span class="k">REFERENCES</span> <span class="n">car</span> <span class="p">(</span><span class="n">car_uid</span><span class="p">),</span>
+    <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">car_uid</span><span class="p">),</span>
+    <span class="k">UNIQUE</span> <span class="p">(</span><span class="n">email</span><span class="p">)</span>
+<span class="p">);</span>
+
+<span class="c1">-- ... see ./sql/person-car-uuid.sql</span>
+
+<span class="c1">-- CREATE TABLE</span>
+<span class="c1">-- CREATE TABLE</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- INSERT 0 1</span>
+<span class="c1">-- Time: 0.062s</span>
+
+<span class="k">SELECT</span> <span class="n">person_uid</span><span class="p">,</span> <span class="n">first_name</span><span class="p">,</span> <span class="n">last_name</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +--------------------------------------+------------+-----------+</span>
+<span class="c1">-- | person_uid                           | first_name | last_name |</span>
+<span class="c1">-- |--------------------------------------+------------+-----------|</span>
+<span class="c1">-- | b90135d4-48fd-4d04-8936-17c7a9503115 | Fernanda   | Beardon   |</span>
+<span class="c1">-- | 83eda910-462e-4590-a63e-b4953ae1358d | Omar       | Colmore   |</span>
+<span class="c1">-- | 64db451a-f54e-4b46-8565-12baf3854026 | John       | Matuschek |</span>
+<span class="c1">-- +--------------------------------------+------------+-----------+</span>
+<span class="c1">-- SELECT 3</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">car</span><span class="p">;</span>
+<span class="c1">-- +--------------------------------------+------------+----------+----------+</span>
+<span class="c1">-- | car_uid                              | make       | model    | price    |</span>
+<span class="c1">-- |--------------------------------------+------------+----------+----------|</span>
+<span class="c1">-- | 057d20f1-fc69-4d22-8362-0524dace063e | Land Rover | Sterling | 87665.38 |</span>
+<span class="c1">-- | b8daa521-ddb0-4461-950a-7c76efd46247 | GMC        | Acadia   | 17662.69 |</span>
+<span class="c1">-- +--------------------------------------+------------+----------+----------+</span>
+<span class="c1">-- SELECT 2</span>
+<span class="c1">-- Time: 0.017s</span>
+
+<span class="c1">-- lets assign some cars</span>
+<span class="k">UPDATE</span> <span class="n">person</span>
+<span class="k">SET</span> <span class="n">car_uid</span> <span class="o">=</span> <span class="s1">'057d20f1-fc69-4d22-8362-0524dace063e'</span>
+<span class="k">WHERE</span> <span class="n">person_uid</span> <span class="o">=</span> <span class="s1">'b90135d4-48fd-4d04-8936-17c7a9503115'</span><span class="p">;</span>
+<span class="c1">-- UPDATE 1</span>
+
+<span class="k">UPDATE</span> <span class="n">person</span>
+<span class="k">SET</span> <span class="n">car_uid</span> <span class="o">=</span> <span class="s1">'b8daa521-ddb0-4461-950a-7c76efd46247'</span>
+<span class="k">WHERE</span> <span class="n">person_uid</span> <span class="o">=</span> <span class="s1">'64db451a-f54e-4b46-8565-12baf3854026'</span><span class="p">;</span>
+<span class="c1">-- UPDATE 1</span>
+
+<span class="k">SELECT</span> <span class="n">person_uid</span><span class="p">,</span> <span class="n">car_uid</span> <span class="k">FROM</span> <span class="n">person</span><span class="p">;</span>
+<span class="c1">-- +--------------------------------------+--------------------------------------+</span>
+<span class="c1">-- | person_uid                           | car_uid                              |</span>
+<span class="c1">-- |--------------------------------------+--------------------------------------|</span>
+<span class="c1">-- | 83eda910-462e-4590-a63e-b4953ae1358d | &lt;null&gt;                               |</span>
+<span class="c1">-- | b90135d4-48fd-4d04-8936-17c7a9503115 | 057d20f1-fc69-4d22-8362-0524dace063e |</span>
+<span class="c1">-- | 64db451a-f54e-4b46-8565-12baf3854026 | b8daa521-ddb0-4461-950a-7c76efd46247 |</span>
+<span class="c1">-- +--------------------------------------+--------------------------------------+</span>
+</code></pre></div></div>
+
+<p>To query this now like so…</p>
+
+<div class="language-sql highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">SELECT</span> <span class="o">*</span>
+<span class="k">FROM</span> <span class="n">person</span>
+<span class="k">JOIN</span> <span class="n">car</span> <span class="k">ON</span> <span class="n">person</span><span class="p">.</span><span class="n">car_uid</span> <span class="o">=</span> <span class="n">car</span><span class="p">.</span><span class="n">car_uid</span><span class="p">;</span>
+
+<span class="c1">-- since both tables have a column named car_uid, the query can be simplified to:</span>
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">JOIN</span> <span class="n">car</span> <span class="k">USING</span> <span class="p">(</span><span class="n">car_uid</span><span class="p">);</span>
+
+<span class="c1">-- example with LEFT JOIN as well</span>
+
+<span class="k">SELECT</span> <span class="o">*</span> <span class="k">FROM</span> <span class="n">person</span> <span class="k">LEFT</span> <span class="k">JOIN</span> <span class="n">car</span> <span class="k">USING</span> <span class="p">(</span><span class="n">car_uid</span><span class="p">);</span>
+</code></pre></div></div>]]></content><author><name></name></author><category term="database" /><category term="postgres" /><summary type="html"><![CDATA[My notes from freecodecamp.org’s sql course as well as my own pg cheetsheat. The accompanying code for these notes can be found in my github repo]]></summary></entry><entry><title type="html">Pihole Unbound Docker</title><link href="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html" rel="alternate" type="text/html" title="Pihole Unbound Docker" /><published>2023-11-13T00:00:00+00:00</published><updated>2023-11-13T00:00:00+00:00</updated><id>https://genzade.github.io/2023/11/13/pihole-unbound-docker</id><content type="html" xml:base="https://genzade.github.io/2023/11/13/pihole-unbound-docker.html"><![CDATA[<p>In an era where online privacy and digital security have become paramount, taking
 control of your network’s DNS infrastructure is a fundamental step towards fortifying
 your defenses. In this guide, we’ll delve into the robust combination of Pi-hole
 and Unbound, leveraging the power of Docker containers to enhance your network’s
