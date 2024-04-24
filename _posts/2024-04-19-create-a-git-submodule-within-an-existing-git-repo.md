@@ -3,7 +3,7 @@ layout: post
 title: create a git submodule within an existing git repo
 date: 2024-04-18 19:27 +0200
 toc: true
-tags: git
+tags: git cheatsheet
 ---
 
 This guide will breakdown the steps needed when working with git repositories and
