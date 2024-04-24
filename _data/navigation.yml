@@ -5,6 +5,7 @@
 - name: About
   link: /about
   image: about
+  hide: true
 - name: Articles
   link: /articles
   image: article

@@ -2,6 +2,7 @@
   class="navbar bg-[rgba(0, 0, 0, 0.1)] absolute left-0 top-full z-[100] h-0 w-screen overflow-hidden backdrop-blur-[50px] md:relative md:top-0 md:h-auto md:w-max md:backdrop-blur-[0px]"
 >
   {% for item in site.data.navigation %}
+  {% if item.name != 'About' %} <!-- TODO: flesh out and bring back 'about' page -->
   <a
     href="{{ item.link }}"
     class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
@@ -17,5 +18,6 @@
       </div>
     </div>
   </a>
+  {% endif %}
   {% endfor %}
 </nav>
