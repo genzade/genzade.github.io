@@ -3,7 +3,7 @@ layout: post
 title: postgres cheatsheet + notes
 date: 2023-12-09 22:10 +0000
 toc: true
-tags: database postgres
+tags: database postgres cheetsheet
 ---
 
 My notes from [freecodecamp.org](https://www.freecodecamp.org/){:target="\_blank"}'s
