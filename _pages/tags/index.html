@@ -3,10 +3,12 @@ layout: default
 permalink: /tags
 ---
 
+{% assign sorted_tags = site.tags | sort %}
+
 <div class="tag-container mx-auto flex items-center justify-center px-10">
-  {% for tag in site.tags %} {% assign tagName = tag | first | downcase %}
+  {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
   <a href="{{ site.baseurl }}/tag/{{ tagName }}">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
+    <button class="h-12 w-auto text-xl">
       {% assign postsCount = tag | last | size %}
       <h1 class="text-black">{{ tagName }} ({{ postsCount }})</h1>
     </button>

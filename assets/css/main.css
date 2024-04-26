@@ -161,5 +161,5 @@ a {
 }
 
 .tag-container button {
-  @apply rounded-full border-2 border-black bg-green-500 px-2 py-1 text-xs font-extrabold text-slate-800 hover:bg-green-700;
+  @apply rounded-full border-2 border-black bg-green-500 px-2 py-1 font-extrabold text-slate-800 hover:bg-green-700;
 }
