@@ -7,7 +7,7 @@ permalink: /tags
 
 <div class="tag-container mx-auto flex items-center justify-center px-10">
   {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
-  <a href="{{ site.baseurl }}/tag/{{ tagName }}">
+  <a href="{{ site.baseurl }}/tags/{{ tagName }}">
     <button class="h-12 w-auto text-xl">
       {% assign postsCount = tag | last | size %}
       <h1 class="text-black">{{ tagName }} ({{ postsCount }})</h1>
