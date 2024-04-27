@@ -6,6 +6,7 @@
     <title>{{ site.title }} {% if page.title %} - {{ page.title }} {% endif %}</title>
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}">
     <link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.svg" />
+    <script type="module" src="https://unpkg.com/@hotwired/turbo@7.1.0/dist/turbo.es2017-umd.js"></script>
     {% if page.layout == "post" %}
     <script src="{{ "/assets/js/article/toc-marker.js" | absolute_url }}" defer></script>
     {% endif %}
