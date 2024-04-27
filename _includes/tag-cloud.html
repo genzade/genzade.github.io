@@ -1,6 +1,21 @@
 {% assign sorted_tags = site.tags | sort %}
 
-<div class="tag-container mx-auto flex items-center justify-center px-10">
+<div class="tag-container mx-auto justify-center px-10">
+  <div class="h-8 w-8 self-center">{% include images/tag.svg %}</div>
+
+  <a href="{{ site.baseurl }}/tags/">
+    {% if page.url == '/tags' %}
+      {% assign active_class = '!bg-green-200' %}
+    {% else %}
+      {% assign active_class = '' %}
+    {% endif %}
+
+    <button class="{{ active_class }} h-12 w-auto text-xl">
+      {% assign postsCount = site.posts | size %}
+      <h1 class="text-black">all ({{ postsCount }})</h1>
+    </button>
+  </a>
+
   {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
   <a href="{{ site.baseurl }}/tags/{{ tagName }}">
     {% if page.url contains tagName %}
