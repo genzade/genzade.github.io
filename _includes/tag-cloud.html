@@ -17,7 +17,7 @@
   </a>
 
   {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
-  <a href="{{ site.baseurl }}/articles/{{ tagName }}">
+  <a href="{{ site.baseurl }}/articles/tags/{{ tagName }}">
     {% if page.url contains tagName %}
       {% assign active_class = '!bg-green-200' %}
     {% else %}
