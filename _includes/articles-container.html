@@ -3,7 +3,7 @@
 <div class="articles-container" data-turbo="false">
   {% for post in posts %}
   <a href="{{ post.url }}">
-    <div class="article-card grid grid-rows-2">
+    <div class="article-card h-96 grid grid-rows-2">
       <div class="row-span-1">
         {% if post.tags %}
         <div class="tag-container">
