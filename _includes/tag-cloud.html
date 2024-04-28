@@ -3,8 +3,8 @@
 <div class="tag-container mx-auto justify-center px-10">
   <div class="h-8 w-8 self-center">{% include images/tag.svg %}</div>
 
-  <a href="{{ site.baseurl }}/tags/">
-    {% if page.url == '/tags' %}
+  <a href="{{ site.baseurl }}/articles/">
+    {% if page.url == '/articles' %}
       {% assign active_class = '!bg-green-200' %}
     {% else %}
       {% assign active_class = '' %}
@@ -17,7 +17,7 @@
   </a>
 
   {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
-  <a href="{{ site.baseurl }}/tags/{{ tagName }}">
+  <a href="{{ site.baseurl }}/articles/{{ tagName }}">
     {% if page.url contains tagName %}
       {% assign active_class = '!bg-green-200' %}
     {% else %}
