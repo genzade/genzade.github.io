@@ -16,10 +16,12 @@ plugins:
   - jekyll-postcss
   - jekyll-seo-tag
   - jekyll-toc
-# markdown: kramdown
-# # kramdown:
-# #   syntax_highlighter: rouge
-# #   input: GFM
+
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+
 # kramdown:
 #   input: GFM
 #   syntax_highlighter: rouge
