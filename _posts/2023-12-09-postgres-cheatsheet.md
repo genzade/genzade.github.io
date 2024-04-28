@@ -190,7 +190,7 @@ INSERT INTO person (
 
 ### Generate mock data from file
 
-Using [mockaroo](https://www.mockaroo.com/) you can generate some data to play with.
+Using [mockaroo](https://www.mockaroo.com/){:target="\_blank"} you can generate some data to play with.
 View the downloaded file [here](https://github.com/genzade/postGRES/blob/main/sql/person.sql){:target="\_blank"}
 
 Use this command to execute that file content.
