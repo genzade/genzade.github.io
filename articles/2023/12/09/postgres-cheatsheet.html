@@ -6,6 +6,7 @@
     <title>Genzade  - postgres cheatsheet + notes </title>
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
+    <script type="module" src="https://unpkg.com/@hotwired/turbo@7.1.0/dist/turbo.es2017-umd.js"></script>
     
     <script src="https://genzade.github.io/assets/js/article/toc-marker.js" defer></script>
     
@@ -16,15 +17,15 @@
 <meta property="og:locale" content="en_US" />
 <meta name="description" content="My notes from freecodecamp.org’s sql course as well as my own pg cheetsheat. The accompanying code for these notes can be found in my github repo" />
 <meta property="og:description" content="My notes from freecodecamp.org’s sql course as well as my own pg cheetsheat. The accompanying code for these notes can be found in my github repo" />
-<link rel="canonical" href="https://genzade.github.io/2023/12/09/postgres-cheatsheet.html" />
-<meta property="og:url" content="https://genzade.github.io/2023/12/09/postgres-cheatsheet.html" />
+<link rel="canonical" href="https://genzade.github.io/articles/2023/12/09/postgres-cheatsheet.html" />
+<meta property="og:url" content="https://genzade.github.io/articles/2023/12/09/postgres-cheatsheet.html" />
 <meta property="og:site_name" content="Genzade" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2023-12-09T22:10:00+00:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="postgres cheatsheet + notes" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-09T22:10:00+00:00","datePublished":"2023-12-09T22:10:00+00:00","description":"My notes from freecodecamp.org’s sql course as well as my own pg cheetsheat. The accompanying code for these notes can be found in my github repo","headline":"postgres cheatsheet + notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://genzade.github.io/2023/12/09/postgres-cheatsheet.html"},"url":"https://genzade.github.io/2023/12/09/postgres-cheatsheet.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-12-09T22:10:00+00:00","datePublished":"2023-12-09T22:10:00+00:00","description":"My notes from freecodecamp.org’s sql course as well as my own pg cheetsheat. The accompanying code for these notes can be found in my github repo","headline":"postgres cheatsheet + notes","mainEntityOfPage":{"@type":"WebPage","@id":"https://genzade.github.io/articles/2023/12/09/postgres-cheatsheet.html"},"url":"https://genzade.github.io/articles/2023/12/09/postgres-cheatsheet.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -114,29 +115,9 @@
   
    <!-- TODO: flesh out and bring back 'about' page -->
   <a
-    href="/tags"
-    class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:3"
-    
-  >
-    <div class="flex items-center justify-center">
-      <div class="inline-flex">
-        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-</svg>
-</div>
-        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold"> Tags </span>
-      </div>
-    </div>
-  </a>
-  
-  
-   <!-- TODO: flesh out and bring back 'about' page -->
-  <a
     href="https://github.com/genzade/genzade.github.io"
     class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:4"
+    style="--i:3"
     
       target="_blank"
     

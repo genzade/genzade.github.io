@@ -3,25 +3,29 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Genzade </title>
+    <title>Genzade  - Pihole Unbound Docker </title>
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
+    <script type="module" src="https://unpkg.com/@hotwired/turbo@7.1.0/dist/turbo.es2017-umd.js"></script>
+    
+    <script src="https://genzade.github.io/assets/js/article/toc-marker.js" defer></script>
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Genzade | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
+<title>Pihole Unbound Docker | Genzade</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Genzade" />
+<meta property="og:title" content="Pihole Unbound Docker" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<meta property="og:description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description." />
-<link rel="canonical" href="https://genzade.github.io/tags/misc.html" />
-<meta property="og:url" content="https://genzade.github.io/tags/misc.html" />
+<meta name="description" content="In an era where online privacy and digital security have become paramount, taking control of your network’s DNS infrastructure is a fundamental step towards fortifying your defenses. In this guide, we’ll delve into the robust combination of Pi-hole and Unbound, leveraging the power of Docker containers to enhance your network’s privacy, security, and overall performance." />
+<meta property="og:description" content="In an era where online privacy and digital security have become paramount, taking control of your network’s DNS infrastructure is a fundamental step towards fortifying your defenses. In this guide, we’ll delve into the robust combination of Pi-hole and Unbound, leveraging the power of Docker containers to enhance your network’s privacy, security, and overall performance." />
+<link rel="canonical" href="https://genzade.github.io/articles/2023/11/13/pihole-unbound-docker.html" />
+<meta property="og:url" content="https://genzade.github.io/articles/2023/11/13/pihole-unbound-docker.html" />
 <meta property="og:site_name" content="Genzade" />
-<meta property="og:type" content="website" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2023-11-13T00:00:00+00:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Genzade" />
+<meta property="twitter:title" content="Pihole Unbound Docker" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebPage","description":"Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.","headline":"Genzade","url":"https://genzade.github.io/tags/misc.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2023-11-13T00:00:00+00:00","datePublished":"2023-11-13T00:00:00+00:00","description":"In an era where online privacy and digital security have become paramount, taking control of your network’s DNS infrastructure is a fundamental step towards fortifying your defenses. In this guide, we’ll delve into the robust combination of Pi-hole and Unbound, leveraging the power of Docker containers to enhance your network’s privacy, security, and overall performance.","headline":"Pihole Unbound Docker","mainEntityOfPage":{"@type":"WebPage","@id":"https://genzade.github.io/articles/2023/11/13/pihole-unbound-docker.html"},"url":"https://genzade.github.io/articles/2023/11/13/pihole-unbound-docker.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -111,29 +115,9 @@
   
    <!-- TODO: flesh out and bring back 'about' page -->
   <a
-    href="/tags"
-    class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:3"
-    
-  >
-    <div class="flex items-center justify-center">
-      <div class="inline-flex">
-        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-</svg>
-</div>
-        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold"> Tags </span>
-      </div>
-    </div>
-  </a>
-  
-  
-   <!-- TODO: flesh out and bring back 'about' page -->
-  <a
     href="https://github.com/genzade/genzade.github.io"
     class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:4"
+    style="--i:3"
     
       target="_blank"
     
@@ -160,60 +144,175 @@
     <div class="px-4 my-28">
       <div class="max-w-5xl bg-slate-900 rounded-lg mx-auto my-16 p-6">
         
+        <h1 class="text-5xl font-extrabold text-center pt-10 uppercase">Pihole Unbound Docker</h1>
+        
 
         <div class="mt-6">
-          <div class="tag-container mx-auto flex items-center justify-center px-10">
-  <a href="/tags/misc">
-    <button class="h-14 w-auto !text-2xl !font-extrabold">
-      <h1 class="text-black">misc</h1>
-    </button>
-  </a>
-</div>
+          <article class="prose my-6 max-w-none break-words px-2 md:prose-lg lg:prose-xl md:pt-24">
+  <div class="mx-auto mt-16">
+    <div class="flex justify-between">
+      <p class="text-sm">
 
+4 minutes to read
 
-
-<div class="articles-container">
-  
-  <div class="article-card grid grid-rows-2">
-    <div class="row-span-1">
-      
-      <div class="tag-container">
-        
-        <a href="/tag/docker">
-          <button>docker</button>
-        </a>
-        
-        <a href="/tag/raspberrypi">
-          <button>raspberrypi</button>
-        </a>
-        
-        <a href="/tag/misc">
-          <button>misc</button>
-        </a>
-        
-      </div>
-      
-
+</p>
       <p class="text-sm">13 Nov 2023</p>
-
-      <a href="/2023/11/13/pihole-unbound-docker.html">
-        <h2>Pihole Unbound Docker</h2>
-      </a>
     </div>
 
-    <div class="row-span-1">
-      <p class="text-sm"><p>In an era where online privacy and digital security have become paramount, takingcontrol ...</p>
+    <div class="md:grid md:grid-cols-9 md:gap-2">
+      <section class="sm:col-span-7"><p>In an era where online privacy and digital security have become paramount, taking
+control of your network’s DNS infrastructure is a fundamental step towards fortifying
+your defenses. In this guide, we’ll delve into the robust combination of Pi-hole
+and Unbound, leveraging the power of Docker containers to enhance your network’s
+privacy, security, and overall performance.</p>
 
-      <div>
-        <a href="/2023/11/13/pihole-unbound-docker.html" class="read-more">
-          <span>Read More</span>
-        </a>
+<h1 id="introduction">
+<a class="anchor" href="#introduction" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introduction</h1>
+
+<p>Pi-hole is an open-source network-wide ad blocker, it not only sweeps away intrusive
+advertisements but also serves as a potent tool for filtering out malicious content
+and tracking. On the other hand, Unbound, a validating, recursive, and caching DNS
+resolver, ensures that your DNS queries are resolved securely and free from eavesdropping
+or manipulation.</p>
+
+<p>Why Docker containers? Docker provides a lightweight and portable solution for deploying
+applications and services, ensuring consistent performance across different environments.
+By encapsulating Pi-hole and Unbound in Docker containers, we achieve an isolated
+and easily replicable setup, simplifying the installation process and minimizing
+potential conflicts.</p>
+
+<p>Even though in the following guide I set this up with a raspberry pi, you can run
+this anywhere you like. That’s the beauty of docker containerization.</p>
+
+<h2 id="prerequisites">
+<a class="anchor" href="#prerequisites" aria-hidden="true"><span class="octicon octicon-link"></span></a>Prerequisites</h2>
+
+<p>First and foremost you need to <a href="https://projects.raspberrypi.org/en/projects/raspberry-pi-setting-up/2" target="\_blank">setup your raspberry pi</a>.</p>
+
+<p>Once that is setup you will need remote access and <a href="https://www.raspberrypi.com/documentation/computers/remote-access.html" target="\_blank">here is a detailed guide</a>
+on how you can achieve this.</p>
+
+<p>Make sure the above steps were done correctly before continuing. Once you have
+established a ssh connection to the pi you will need to install docker and docker
+compose.</p>
+
+<p>Before coninuing</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get upgrade
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">docker</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>curl <span class="nt">-sSL</span> https://get.docker.com | sh
+<span class="nv">$ </span><span class="nb">sudo </span>usermod <span class="nt">-aG</span> docker <span class="nv">$USER</span>
+</code></pre></div></div>
+
+<p>See <a href="https://raspberrytips.com/docker-on-raspberry-pi/" target="\_blank">this article</a> for detailed
+explanation.</p>
+
+<p><code class="language-plaintext highlighter-rouge">docker compose</code></p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">sudo </span>apt-get update
+<span class="nv">$ </span><span class="nb">sudo </span>apt-get <span class="nb">install </span>docker-compose-plugin
+</code></pre></div></div>
+
+<p>First create a <code class="language-plaintext highlighter-rouge">.env</code> file to substitute variables for your deployment.</p>
+
+<h1 id="pi-hole-environment-variables">
+<a class="anchor" href="#pi-hole-environment-variables" aria-hidden="true"><span class="octicon octicon-link"></span></a>Pi-hole environment variables</h1>
+
+<blockquote>
+  <p>Vars and descriptions can be viewed in full from the <a href="https://github.com/pi-hole/docker-pi-hole/#environment-variables" target="\_blank">official pihole container</a>:</p>
+</blockquote>
+
+<p>Example <code class="language-plaintext highlighter-rouge">.env</code> file in the same directory as your <code class="language-plaintext highlighter-rouge">docker-compose.yaml</code> file:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">FTLCONF_LOCAL_IPV4</span><span class="o">=</span>192.168.1.10
+<span class="nv">TZ</span><span class="o">=</span>America/Los_Angeles
+<span class="nv">WEBPASSWORD</span><span class="o">=</span>QWERTY123456asdfASDF
+<span class="nv">REV_SERVER</span><span class="o">=</span><span class="nb">true
+</span><span class="nv">REV_SERVER_DOMAIN</span><span class="o">=</span><span class="nb">local
+</span><span class="nv">REV_SERVER_TARGET</span><span class="o">=</span>192.168.1.1
+<span class="nv">REV_SERVER_CIDR</span><span class="o">=</span>192.168.0.0/16
+<span class="nv">HOSTNAME</span><span class="o">=</span>pihole
+<span class="nv">DOMAIN_NAME</span><span class="o">=</span>pihole.local
+<span class="nv">PIHOLE_WEBPORT</span><span class="o">=</span>80
+<span class="nv">WEBTHEME</span><span class="o">=</span>default-light
+</code></pre></div></div>
+
+<p>Copy the example file to a file called <code class="language-plaintext highlighter-rouge">.env</code>, do this with;</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span><span class="nb">cp</span> .env.sample .env
+</code></pre></div></div>
+
+<p>Change the values as nesessary.</p>
+
+<h1 id="run-it">
+<a class="anchor" href="#run-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Run it</h1>
+
+<p>You run it with the following command.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker compose up <span class="nt">-d</span>
+</code></pre></div></div>
+
+<h1 id="test-it">
+<a class="anchor" href="#test-it" aria-hidden="true"><span class="octicon octicon-link"></span></a>Test it</h1>
+
+<p>From inside your raspberry pi start a bash session in the docker container.</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>docker <span class="nb">exec</span> <span class="nt">-it</span> pihole bash
+</code></pre></div></div>
+
+<p>And run the following;</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>dig fail01.dnssec.works @127.0.0.1 <span class="nt">-p</span> 5335 <span class="c"># this should fail (no response)</span>
+<span class="nv">$ </span>dig dnssec.works @127.0.0.1 <span class="nt">-p</span> 5335        <span class="c"># this should work and return an IP address</span>
+</code></pre></div></div>
+
+<p>Read <a href="https://docs.pi-hole.net/guides/dns/unbound/" target="\_blank">this article</a> for a detailed
+explanation of what is going on here.</p>
+
+<p>If all is well update your router log into your router’s configuration page and
+find the DHCP/DNS settings and set it so that your router is pointing to your
+raspberry pi’s IP address. Note: make sure you adjust this setting under your
+LAN settings and not the WAN.</p>
+
+<p>Log into the admin dashboard of you pihole in a browser and you should start
+seeing queries being blocked.</p>
+
+<h1 id="github-repo">
+<a class="anchor" href="#github-repo" aria-hidden="true"><span class="octicon octicon-link"></span></a>Github repo</h1>
+
+<p>You can check out all the source code for this setup <a href="https://github.com/genzade/pihole_unbound" target="\_blank">here</a>.</p>
+</section>
+
+      <div class="col-span-2 hidden h-full md:mt-0 md:inline">
+        <aside class="sticky top-20 pl-0 pt-0">
+          <nav class="toc sticky left-12 top-0 w-auto p-4 leading-loose">
+            <header class="font-bold">Table of Contents</header>
+            <div class="text-sm"><ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#introduction">Introduction</a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#prerequisites">Prerequisites</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#pi-hole-environment-variables">Pi-hole environment variables</a></li>
+<li class="toc-entry toc-h1"><a href="#run-it">Run it</a></li>
+<li class="toc-entry toc-h1"><a href="#test-it">Test it</a></li>
+<li class="toc-entry toc-h1"><a href="#github-repo">Github repo</a></li>
+</ul></div>
+            <svg class="toc-marker" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+  <path stroke="#00F603" stroke-width="3" fill="transparent" stroke-dasharray="0, 0, 0, 1000" stroke-linecap="round" stroke-linejoin="round" transform="translate(-0.5, -0.5)" />
+</svg>
+
+          </nav>
+        </aside>
       </div>
+      <div class="grid justify-items-end gap-2"></div>
     </div>
   </div>
-  
-</div>
-
+</article>
 
         </div>
       </div>

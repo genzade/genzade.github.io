@@ -6,6 +6,7 @@
     <title>Genzade </title>
     <link rel="stylesheet" href="https://genzade.github.io/assets/css/main.css">
     <link rel="icon" type="image/x-icon" href="/assets/images/favicon.svg" />
+    <script type="module" src="https://unpkg.com/@hotwired/turbo@7.1.0/dist/turbo.es2017-umd.js"></script>
     
     <!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Genzade | Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</title>
@@ -111,29 +112,9 @@
   
    <!-- TODO: flesh out and bring back 'about' page -->
   <a
-    href="/tags"
-    class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:3"
-    
-  >
-    <div class="flex items-center justify-center">
-      <div class="inline-flex">
-        <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
-  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
-</svg>
-</div>
-        <span class="items-center py-5 pl-2 text-center text-lg font-extrabold"> Tags </span>
-      </div>
-    </div>
-  </a>
-  
-  
-   <!-- TODO: flesh out and bring back 'about' page -->
-  <a
     href="https://github.com/genzade/genzade.github.io"
     class="text-sm my-4 block px-20 md:m-2 md:inline-flex md:px-0 md:pl-1"
-    style="--i:4"
+    style="--i:3"
     
       target="_blank"
     
@@ -164,58 +145,183 @@
         <div class="mt-6">
           
 
-<div class="tag-container mx-auto flex items-center justify-center px-10">
+<div class="tag-container mx-auto justify-center px-10">
+  <div class="h-8 w-8 self-center"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.568 3H5.25A2.25 2.25 0 0 0 3 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 0 0 5.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 0 0 9.568 3Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 6h.008v.008H6V6Z" />
+</svg>
+</div>
+
+  <a href="/articles/">
+    
+
+    <button class=" h-12 w-auto text-xl">
+      
+      <h1 class="text-black">all (3)</h1>
+    </button>
+  </a>
+
    
-  <a href="/tags/cheatsheet">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/cheatsheet">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">cheatsheet (2)</h1>
     </button>
   </a>
    
-  <a href="/tags/database">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/database">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">database (1)</h1>
     </button>
   </a>
    
-  <a href="/tags/docker">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/docker">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">docker (1)</h1>
     </button>
   </a>
    
-  <a href="/tags/git">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/git">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">git (1)</h1>
     </button>
   </a>
    
-  <a href="/tags/misc">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/misc">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">misc (1)</h1>
     </button>
   </a>
    
-  <a href="/tags/postgres">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/postgres">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">postgres (1)</h1>
     </button>
   </a>
    
-  <a href="/tags/raspberrypi">
-    <button class="h-12 w-auto text-xl">
+  <a href="/articles/raspberrypi">
+    
+
+    <button class=" h-12 w-auto text-xl">
       
       <h1 class="text-black">raspberrypi (1)</h1>
     </button>
   </a>
   
 </div>
+
+
+
+
+<div class="articles-container" data-turbo="false">
+  
+  <a href="/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html">
+    <div class="article-card h-96 grid grid-rows-2">
+      <div class="row-span-1">
+        
+        <div class="tag-container">
+          
+          <button>git</button>
+          
+          <button>cheatsheet</button>
+          
+        </div>
+        
+
+        <p class="text-sm">18 Apr 2024</p>
+
+        <h2>create a git submodule within an existing ...</h2>
+      </div>
+
+      <div class="row-span-1">
+        <p class="text-sm"><p>This guide will breakdown the steps needed when working with git repositories andgit subm...</p>
+
+        <div>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+    </div>
+  </a>
+  
+  <a href="/articles/2023/12/09/postgres-cheatsheet.html">
+    <div class="article-card h-96 grid grid-rows-2">
+      <div class="row-span-1">
+        
+        <div class="tag-container">
+          
+          <button>database</button>
+          
+          <button>postgres</button>
+          
+          <button>cheatsheet</button>
+          
+        </div>
+        
+
+        <p class="text-sm">09 Dec 2023</p>
+
+        <h2>postgres cheatsheet + notes</h2>
+      </div>
+
+      <div class="row-span-1">
+        <p class="text-sm"><p>My notes from freecodecamp.org’ssql course as well as my own pg cheetsheat. The accompany...</p>
+
+        <div>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+    </div>
+  </a>
+  
+  <a href="/articles/2023/11/13/pihole-unbound-docker.html">
+    <div class="article-card h-96 grid grid-rows-2">
+      <div class="row-span-1">
+        
+        <div class="tag-container">
+          
+          <button>docker</button>
+          
+          <button>raspberrypi</button>
+          
+          <button>misc</button>
+          
+        </div>
+        
+
+        <p class="text-sm">13 Nov 2023</p>
+
+        <h2>Pihole Unbound Docker</h2>
+      </div>
+
+      <div class="row-span-1">
+        <p class="text-sm"><p>In an era where online privacy and digital security have become paramount, takingcontrol ...</p>
+
+        <div>
+          <span class="read-more">Read More</span>
+        </div>
+      </div>
+    </div>
+  </a>
+  
+</div>
+
 
         </div>
       </div>
