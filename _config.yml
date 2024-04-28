@@ -31,6 +31,11 @@ plugins:
 #     line_numbers: true
 #     start_line: 1
 
+collections:
+  posts:
+    permalink: /articles/:year/:month/:day/:title.html
+    output: true
+
 postcss:
   cache: false
 
