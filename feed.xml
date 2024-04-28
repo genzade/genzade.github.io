@@ -1,4 +1,326 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2024-04-28T20:34:25+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">create a git submodule within an existing git repo</title><link href="https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" rel="alternate" type="text/html" title="create a git submodule within an existing git repo" /><published>2024-04-18T17:27:00+00:00</published><updated>2024-04-18T17:27:00+00:00</updated><id>https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo</id><content type="html" xml:base="https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"><![CDATA[<p>This guide will breakdown the steps needed when working with git repositories and
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="https://genzade.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://genzade.github.io/" rel="alternate" type="text/html" /><updated>2024-04-28T20:56:04+00:00</updated><id>https://genzade.github.io/feed.xml</id><title type="html">Genzade</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Using Turbo in Jekyll not rails</title><link href="https://genzade.github.io/articles/2024/04/28/using-turbo-in-jekyll-not-rails.html" rel="alternate" type="text/html" title="Using Turbo in Jekyll not rails" /><published>2024-04-28T00:55:00+00:00</published><updated>2024-04-28T00:55:00+00:00</updated><id>https://genzade.github.io/articles/2024/04/28/using-turbo-in-jekyll-not-rails</id><content type="html" xml:base="https://genzade.github.io/articles/2024/04/28/using-turbo-in-jekyll-not-rails.html"><![CDATA[<p>If you have had some exposure to the <a href="https://turbo.hotwired.dev/" target="\_blank">hotwired turbo framework</a>,
+then you already know how awesome it is. I recently found out exactly how easy
+it can be to use it outside of <a href="https://rubyonrails.org/" target="\_blank">Ruby on Rails</a>,
+and in this article, I will run through how I implemented it on my own
+<a href="https://jekyllrb.com/" target="\_blank">Jekyll</a> single page application site.</p>
+
+<h1 id="introduction">Introduction</h1>
+
+<p>In this article I will document how I fixed an issue I was having in my site.
+I have a page with all articles (my blog posts) and a page with all
+the generated tags (article tags or categories). The articles are displayed in
+the articles page and when you click on an article you are redirected to a page
+to read that article. When you click the on an tag in the tags page it will take
+you to another page with all article links that correspond to that tag.</p>
+
+<p><a href="https://www.urbandictionary.com/define.php?term=No%20Shit%20Sherlock">😏</a> great!
+So what’s the problem?</p>
+
+<p>This may seem pretty straightforward but in my opinion not the best user experience.
+What is the point of having two separate pages where the user can pick articles to
+read? One with all articles and one where they are sorted by their respective tags.
+I thought why not combine the two pages together and show the user everything on
+one page.</p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+
+<p>This article assumes you have some working knowledge of <a href="https://jekyllrb.com/" target="\_blank">Jekyll</a>
+and some basic HTML and CSS. It may also help to know some <a href="https://tailwindcss.com/" target="\_blank">TailwindCSS</a>,
+though I will be omitting a lot of the classes in the code snippets just for brevity,
+and they are not the focus of this article. If you do want to check out how the pages
+are styled, feel free to check out the <a href="https://github.com/genzade/genzade.github.io" target="\_blank">GitHub repo</a>.</p>
+
+<h1 id="the-problem">The Problem</h1>
+
+<p>The current structure of my site is as follows;</p>
+
+<p>I have a tag page with the following code;</p>
+
+<p><code class="language-plaintext highlighter-rouge">_pages/tags/index.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+permalink: /tags
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tag-container ..."</span><span class="nt">&gt;</span>
+  {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/tags/{{ tagName }}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"h-12 w-auto text-xl"</span><span class="nt">&gt;</span>
+      {% assign postsCount = tag | last | size %}
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-black"</span><span class="nt">&gt;</span>{{ tagName }} ({{ postsCount }})<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<p>This page just displays all the tags as a link/button to each of tag page which
+displays all the articles that have that tag. This is the code for the individual
+tag page;</p>
+
+<p><code class="language-plaintext highlighter-rouge">_layouts/tag_page.html</code></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+---
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tag-container ... mx-auto"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/tags/{{ page.tag }}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"h-14 w-auto !text-2xl !font-extrabold"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-black"</span><span class="nt">&gt;</span>{{ page.tag }}<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+{% include articles-container.html posts=page.posts %}
+</code></pre></div></div>
+
+<p>I want to combine these to pages into one page. A page that has a “tags cloud” where you
+can click one of them all the corresponding articles below it. There will be a
+button called “all” which when you click it all of the articles will appear.</p>
+
+<h1 id="the-solution">The Solution</h1>
+
+<p>It seemed obvious to me that the first step was to place both the
+contents of the <code class="language-plaintext highlighter-rouge">tag_page</code> and the tag index on one page. One could click on the
+tags at the top of the page, and the bottom of the page would update with the
+articles based on the clicked tag. That’s the goal, so that’s where I’m starting
+from.</p>
+
+<p>Though there are a few ways this can be achieved, I only experimented with
+a couple.</p>
+
+<h2 id="using-jquery">Using JQuery</h2>
+
+<p>The first thing i tried was to use <a href="https://jquery.com/" target="\_blank">JQuery</a>.
+This seemed like the simple solution at first because you could use the
+<a href="https://www.w3schools.com/js/js_htmldom.asp" target="\_blank">DOM</a> to
+manipulate what the user sees.</p>
+
+<p>To be honest, I began to write the code for this and quickly realised it was
+getting a bit messy. And even though I got a
+(somewhat) working solution, I was already feeling a bit icky about how I
+achieved it. I won’t share that code here becuase it was far from pretty and
+let’s face it, if you are reading this that is not what you came here to see.</p>
+
+<p>But I was thinking there must be an easier way to do this.</p>
+
+<p>And there was.</p>
+
+<h2 id="enter-turbo">Enter Turbo</h2>
+
+<blockquote>
+  <p><a href="https://turbo.hotwired.dev/handbook/frames" target="\_blank">Turbo Frames allow predefined parts of a page to be updated on
+request. Any links and forms inside a frame are captured, and the frame contents
+automatically updated after receiving a
+response</a>.</p>
+</blockquote>
+
+<p>Perfect, that sounds like what I need.</p>
+
+<h3 id="install-turbo-in-jekyll">Install turbo in Jekyll</h3>
+
+<p>First I tried to install it with <a href="https://yarnpkg.com/" target="\_blank">yarn</a> by running;</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nv">$ </span>yarn add @hotwired/turbo
+</code></pre></div></div>
+
+<p>But was getting this error <code class="language-plaintext highlighter-rouge">SyntaxError: Cannot use import statement outside a module</code>.</p>
+
+<p>After some digging around I stumbled upon a solution from <a href="https://github.com/hotwired/turbo/issues/18" target="\_blank">this issue</a>
+where they recommended using <a href="https://unpkg.com/" target="\_blank">unpkg</a>, so I imported it like so;</p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>     &lt;title&gt;{{ site.title }} {% if page.title %} - {{ page.title }} {% endif %}&lt;/title&gt;
+     &lt;link rel="stylesheet" href="{{ "/assets/css/main.css" | absolute_url }}"&gt;
+     &lt;link rel="icon" type="image/x-icon" href="{{site.baseurl}}/assets/images/favicon.svg" /&gt;
+<span class="gi">+    &lt;script src="https://unpkg.com/@hotwired/turbo@7.1.0/dist/turbo.es2017-umd.js"&gt;&lt;/script&gt;
+</span>     {% if page.layout == "post" %}
+     &lt;script src="{{ "/assets/js/article/toc-marker.js" | absolute_url }}" defer&gt;&lt;/script&gt;
+     {% endif %}
+</code></pre></div></div>
+
+<p>It now seems like turbo is working properly in the site (no errors after build, so good!).</p>
+
+<h3 id="using-turbo-in-jekyll">Using Turbo in Jekyll</h3>
+
+<p>Ok, now we need to combine those pages into one.</p>
+
+<p>Lets start using turbo</p>
+
+<p>We can copy the “tag cloud” from <code class="language-plaintext highlighter-rouge">_pages/tags/index.html</code> into <code class="language-plaintext highlighter-rouge">/_layouts/tag_page.html</code>
+and we can wrap the <code class="language-plaintext highlighter-rouge">articles-container</code> in a turbo-frame tag like so;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tag-container mx-auto ..."</span><span class="nt">&gt;</span>
+  {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/tags/{{ tagName }}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"h-12 w-auto text-xl"</span><span class="nt">&gt;</span>
+      {% assign postsCount = tag | last | size %}
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-black"</span><span class="nt">&gt;</span>{{ tagName }} ({{ postsCount }})<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="nt">&lt;turbo-frame</span> <span class="na">id=</span><span class="s">"main_frame"</span><span class="nt">&gt;</span>
+  {% include articles-container.html posts=page.posts %}
+<span class="nt">&lt;/turbo-frame&gt;</span>
+</code></pre></div></div>
+
+<p>Now when you click on the tags in the tag cloud the corresponding articles will appear below it.</p>
+
+<p>There is a small problem here now in that the articles only appear when a tag is clicked in the tag cloud.</p>
+
+<p>The fix for this is easy, we can just add the <code class="language-plaintext highlighter-rouge">articles-container</code> in <code class="language-plaintext highlighter-rouge">_pages/tags/index.html</code>;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: default
+permalink: /tags
+---
+
+{% assign sorted_tags = site.tags | sort %}
+
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tag-container mx-auto ..."</span><span class="nt">&gt;</span>
+  {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/tags/{{ tagName }}"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"h-12 w-auto text-xl"</span><span class="nt">&gt;</span>
+      {% assign postsCount = tag | last | size %}
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-black"</span><span class="nt">&gt;</span>{{ tagName }} ({{ postsCount }})<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/div&gt;</span>
+
+{% include articles-container.html posts=site.posts %}
+</code></pre></div></div>
+
+<p>Now all the articles will be shown on the tag page by default.</p>
+
+<p>Next we should take care of another UI issue. When you click on the tag in the
+tag cloud there should be some visual feedback indicating which tag article we
+are currently displaying.</p>
+
+<p>For this we just need to change the button colour of the tag that corresponds
+to the current tag page. For this I decided to just use <a href="https://liquidjs.com/tutorials/intro-to-liquid.html" target="\_blank">Liquid templating</a>
+to assign an <code class="language-plaintext highlighter-rouge">active_class</code> and just add it to the button class to override
+the colour. Something like this;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- on this page we have access to tagName --&gt;</span>
+{% if page.url contains tagName %}
+  <span class="c">&lt;!-- the `!` TailwindCSS, to override classes --&gt;</span>
+  {% assign active_class = '!bg-green-200' %}
+{% else %} {% assign active_class = '' %} {% endif %}
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"{{ active_class }} h-12 w-auto text-xl"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- active_class interpolated here --&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<h1 id="wrapping-up">Wrapping up</h1>
+
+<p>Finally to wrap everything up here, we should do some refactoring. I noticed that
+the “tag cloud” code is now duplicated in two places, we can fix this by using a
+partial like so.</p>
+
+<p><code class="language-plaintext highlighter-rouge">_pages/tags/index.html</code></p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   ---
+   layout: default
+   permalink: /tags
+   ---
+<span class="err">
+</span>   {% assign sorted_tags = site.tags | sort %}
+<span class="err">
+</span><span class="gd">-  &lt;div class="tag-container mx-auto flex items-center justify-center px-10"&gt;
+-    {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+-    &lt;a href="{{ site.baseurl }}/tags/{{ tagName }}"&gt;
+-      &lt;button class="h-12 w-auto text-xl"&gt;
+-        {% assign postsCount = tag | last | size %}
+-        &lt;h1 class="text-black"&gt;{{ tagName }} ({{ postsCount }})&lt;/h1&gt;
+-      &lt;/button&gt;
+-    &lt;/a&gt;
+-    {% endfor %}
+-  &lt;/div&gt;
+</span><span class="gi">+  {% include tag-cloud.html %}
+</span><span class="err">
+</span>   {% include articles-container.html posts=site.posts %}
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">_layouts/tag_page.html</code></p>
+
+<div class="language-diff highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  ---
+  layout: default
+  ---
+<span class="err">
+</span><span class="gd">-  {% assign sorted_tags = site.tags | sort %}
+-
+-  &lt;div class="tag-container mx-auto flex items-center justify-center px-10"&gt;
+-    {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+-    &lt;a href="{{ site.baseurl }}/tags/{{ tagName }}"&gt;
+-      {% if page.url contains tagName %}
+-        {% assign active_class = '!bg-green-200' %}
+-      {% else %}
+-        {% assign active_class = '' %}
+-      {% endif %}
+-
+-      &lt;button class="{{ active_class }} h-12 w-auto text-xl"&gt;
+-        {% assign postsCount = tag | last | size %}
+-        &lt;h1 class="text-black"&gt;{{ tagName }} ({{ postsCount }})&lt;/h1&gt;
+-      &lt;/button&gt;
+-    &lt;/a&gt;
+-    {% endfor %}
+-  &lt;/div&gt;
+</span><span class="gi">+  {% include tag-cloud.html %}
+</span><span class="err">
+</span>  &lt;turbo-frame id="main_frame"&gt;
+    {% include articles-container.html posts=page.posts %}
+  &lt;/turbo-frame&gt;
+</code></pre></div></div>
+
+<p>The new partial file <code class="language-plaintext highlighter-rouge">/_includes/tag-cloud.html</code> looks like this;</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"tag-container mx-auto ..."</span><span class="nt">&gt;</span>
+  {% for tag in sorted_tags %} {% assign tagName = tag | first | downcase %}
+  <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"{{ site.baseurl }}/tags/{{ tagName }}"</span><span class="nt">&gt;</span>
+    {% if page.url contains tagName %}
+      {% assign active_class = '!bg-green-200' %}
+    {% else %}
+      {% assign active_class = '' %}
+    {% endif %}
+
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"{{ active_class }} h-12 w-auto text-xl"</span><span class="nt">&gt;</span>
+      {% assign postsCount = tag | last | size %}
+      <span class="nt">&lt;h1</span> <span class="na">class=</span><span class="s">"text-black"</span><span class="nt">&gt;</span>{{ tagName }} ({{ postsCount }})<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/a&gt;</span>
+  {% endfor %}
+<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h2 id="one-final-gotcha">One final Gotcha!</h2>
+
+<p>Within my articles-container partial, I have links to the posts, but since they
+are wrapped in a turbo-frame, those links would not work. The response to the
+turbo-frame request must contain the same ID as the turbo-frame that sent it
+(see <a href="https://stackoverflow.com/questions/69712616/hotwire-turbo-does-not-replace-turbo-frame-throws-warning-response-has-no-matc" target="\_blank">this stack overflow post</a>).</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;turbo-frame</span> <span class="na">id=</span><span class="s">"main_frame"</span><span class="nt">&gt;</span>
+  {% include articles-container.html posts=page.posts %}
+<span class="nt">&lt;/turbo-frame&gt;</span>
+</code></pre></div></div>
+
+<p>Since I do not want my article pages themselves to be replaced in the frame or,
+for that matter, have anything to do with turbo frames for the moment a way around
+this is to just disable turbo on those links to the articles with <code class="language-plaintext highlighter-rouge">data-turbo="false"</code>.</p>
+
+<p>This fixed the issue.</p>]]></content><author><name></name></author><category term="turbo" /><category term="jekyll" /><summary type="html"><![CDATA[If you have had some exposure to the hotwired turbo framework, then you already know how awesome it is. I recently found out exactly how easy it can be to use it outside of Ruby on Rails, and in this article, I will run through how I implemented it on my own Jekyll single page application site.]]></summary></entry><entry><title type="html">create a git submodule within an existing git repo</title><link href="https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html" rel="alternate" type="text/html" title="create a git submodule within an existing git repo" /><published>2024-04-18T17:27:00+00:00</published><updated>2024-04-18T17:27:00+00:00</updated><id>https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo</id><content type="html" xml:base="https://genzade.github.io/articles/2024/04/18/create-a-git-submodule-within-an-existing-git-repo.html"><![CDATA[<p>This guide will breakdown the steps needed when working with git repositories and
 git submodules.</p>
 
 <h1 id="introduction">Introduction</h1>
