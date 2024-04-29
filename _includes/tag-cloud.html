@@ -1,6 +1,6 @@
 {% assign sorted_tags = site.tags | sort %}
 
-<div class="tag-container mx-auto justify-center px-10">
+<div class="tag-container mx-auto justify-center px-4">
   <div class="h-8 w-8 self-center">{% include images/tag.svg %}</div>
 
   <a href="{{ site.baseurl }}/articles">
@@ -12,7 +12,7 @@
 
     <button class="{{ active_class }} h-12 w-auto text-xl">
       {% assign postsCount = site.posts | size %}
-      <h1 class="text-black">all ({{ postsCount }})</h1>
+      <h4 class="text-black">all ({{ postsCount }})</h4>
     </button>
   </a>
 
@@ -26,7 +26,7 @@
 
     <button class="{{ active_class }} h-12 w-auto text-xl">
       {% assign postsCount = tag | last | size %}
-      <h1 class="text-black">{{ tagName }} ({{ postsCount }})</h1>
+      <h4 class="text-black">{{ tagName }} ({{ postsCount }})</h4>
     </button>
   </a>
   {% endfor %}
