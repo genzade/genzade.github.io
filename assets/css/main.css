@@ -41,7 +41,7 @@ body {
 
 h1 {
   font-family: "jura-bold";
-  @apply text-slate-100;
+  @apply text-slate-300;
 }
 
 h2,
