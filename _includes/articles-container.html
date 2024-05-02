@@ -3,27 +3,31 @@
 <div class="articles-container" data-turbo="false">
   {% for post in posts %}
   <a href="{{ post.url }}">
-    <div class="article-card h-96 grid grid-rows-2">
-      <div class="row-span-1">
+    <div class="article-card h-min">
+      <div class="mx-auto flex h-4 mb-3 w-full justify-between">
+        <div class="h-5 w-5">{% include images/article.svg %}</div>
+
+        <p class="text-sm">{{ post.date | date_to_string }}</p>
+      </div>
+
+      <div class="grid">
+        <div class="row-span-1 h-14">
+          <hr class="mx-auto rounded border-t-1 border-slate-600 hover:border-slate-800">
+          <h3 class="text-xl">{{ post.title | truncate: 45 }}</h2>
+          <hr class="mx-auto rounded border-t-1 border-slate-600 hover:border-slate-800">
+        </div>
+
+        <div class="row-span-2 mt-3 h-36">
+          {{ post.excerpt | strip_html | markdownify | truncate: 145 }}
+        </div>
+
         {% if post.tags %}
-        <div class="tag-container">
+        <div class="tag-container h-min my-0 mx-auto flex w-full overflow-x-auto">
           {% for tag in post.tags %}
           <button>{{ tag }}</button>
           {% endfor %}
         </div>
         {% endif %}
-
-        <p class="text-sm">{{ post.date | date_to_string }}</p>
-
-        <h2>{{ post.title | truncate: 45 }}</h2>
-      </div>
-
-      <div class="row-span-1">
-        <p class="text-sm">{{ post.excerpt | strip_html | strip_newlines | markdownify | truncate: 95 }}</p>
-
-        <div>
-          <span class="read-more">Read More</span>
-        </div>
       </div>
     </div>
   </a>

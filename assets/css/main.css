@@ -136,7 +136,7 @@ a {
 }
 
 .article-card {
-  @apply m-4 inline-block overflow-hidden rounded-lg bg-slate-800 p-4 shadow-lg hover:bg-slate-700;
+  @apply m-4 overflow-hidden rounded-lg bg-slate-800 p-4 shadow-lg hover:bg-slate-700;
 }
 
 .article-card h2 {
@@ -157,7 +157,7 @@ a {
 }
 
 .tag-container {
-  @apply my-2 flex-wrap items-center;
+  @apply items-center;
 }
 
 .tag-container button {
